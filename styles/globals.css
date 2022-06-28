@@ -1,9 +1,21 @@
+@font-face {
+  font-family: 'Vox';
+  src: url('/fonts/VoxRegular.ttf') format('ttf'),
+    
+}
+
 html,
 body {
+ 
+  background-image: url('../img/bg-grey.png');
+  background-image: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Vox';
 }
 
 a {
@@ -14,3 +26,4 @@ a {
 * {
   box-sizing: border-box;
 }
+

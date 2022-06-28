@@ -1,8 +1,7 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import styles from '../styles/Home.module.css';
-import Logo from '../public/logo.png';
-
+//import Image from 'next/image';
+import styles from '../styles/Home.module.scss';
+import Link from 'next/link';
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -10,22 +9,34 @@ export default function Home() {
         <title>Rally Apoyandote®</title>
         <meta name='description' content='Rally Apoyandote® Eisai' />
         <link rel='icon' href='/icon.png' />
-        <meta property="og:image" content="/portada.png" />
+        <meta property='og:image' content='/portada.png' />
+        <meta property='og:title' content='Rally Apoyandote® Eisai' />
+        <meta property='og:description' content='Rally Apoyandote® Eisai' />
+        <meta property='og:image:width' content='768' />
+        <meta property='og:image:height' content='768' />
       </Head>
       <main className={styles.main}>
-        <Image src={Logo} alt='Rally Apoyandote®' width={296.54} height={78} />
+        <div className={styles.contenedor}>
+          <h1 className={styles.textGradient}>LLEGANDO JUNTOS A LA META DE LA SALUD</h1>
+          <div className={styles.botonesHome}>
+            <Link href='/rallyapoyandote' >
+              <p className={styles.boton}>RALLY APOYANDOTE®</p>
+            </Link>
+            <Link href='/servicios' >
+              <p className={styles.boton}>PITS</p>
+            </Link>
+            <Link href='/contacto' >
+              <p className={styles.boton}>COACHING</p>
+            </Link>
+            <Link href='/contacto' >
+              <p className={styles.boton}>CORREDORES</p>
+            </Link>
+            <Link href='/reultados' >
+              <p className={styles.boton}>RESULTADOS</p>
+            </Link>
+          </div>
+        </div>
       </main>
-
-      <footer className={styles.footer}>
-        <span className={styles.logo}>
-          <Image
-            src='/logos.png'
-            alt='Vercel Logo'
-            width={344.75}
-            height={46}
-          />
-        </span>
-      </footer>
     </div>
   );
 }

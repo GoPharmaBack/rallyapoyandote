@@ -1,0 +1,35 @@
+.rallyapoyandote {
+  height: 100vh;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mapa {
+  flex: 1;
+}
+.contenedor{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedorTexto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+  max-width: 480px;
+  span {
+    font-weight: bolder;
+    color: #c3006d;
+  }
+}
+
+.contenedor {
+  display: flex;
+}
