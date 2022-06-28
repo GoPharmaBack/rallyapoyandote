@@ -123,14 +123,19 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  max-width: 1180px;
+  max-width: 1000px;
   height: 100%;
   width: 100%;
-  margin-top: 20vh;
+  margin-top: 15vh;
   h1,
   .botonesHome {
     text-align: center;
     flex: 1;
+  }
+  h1 {
+   text-align: left;
+   letter-spacing: 2px;
+   font-size: calc(1.8rem + 2vmin) !important;
   }
   .boton {
     max-width: 340px;
@@ -147,10 +152,13 @@
   }
 }
 .header {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .textGradient {
+ 
+  text-transform: uppercase;
+  text-align: left;
   /* Set the background color */
   background: linear-gradient(to right, #d40d7f 0%, #1c8bb6 100%);
   /* Mask the color to the text, and remove the rest  */

@@ -17,10 +17,10 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.contenedor}>
-          <h1 className={styles.textGradient}>LLEGANDO JUNTOS A LA META DE LA SALUD</h1>
+          <h1 className={styles.textGradient}>Nuestra meta:<br/> el cuidado de la<br/> salud humana</h1>
           <div className={styles.botonesHome}>
             <Link href='/rallyapoyandote' >
-              <p className={styles.boton}>RALLY APOYANDOTE®</p>
+              <p className={styles.boton}>RALLY APOYANDOTE<sup>®</sup> </p>
             </Link>
             <Link href='/servicios' >
               <p className={styles.boton}>PITS</p>

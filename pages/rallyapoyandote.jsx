@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Nav from '../components/Nav';
+import Footer from '../components/Footer';
 import Image from 'next/image';
 import Mapa from '../img/mapa.png';
 import styles from '../styles/RA.module.scss';
@@ -30,25 +31,30 @@ function rallyapoyandote() {
           <div className={styles.contenedorTexto}>
             <h2 className={styles.header}>¡HOLA, PILOTO!</h2>
             <p>
-              Bienvenido al
-              <span>
-                RALLY MÉXICO APOYANDOTE<sup>®</sup>,
+              Bienvenido al  
+              <span style={{marginLeft:"3px"}}>
+                 RALLY MÉXICO APOYANDOTE<sup>®</sup>,
               </span>
               <br /> a continuación te contamos todo sobre esta gran carrera:
             </p>
             <p>
-              <span>1.RESULTADOS:</span> en esta sección podrás seguir tu
+              <span className={styles.numero}>1.BASES:</span> en esta sección podrás seguir tu
               puntuación, se te otorgará un <span>punto por cada paciente</span>
               que integres al programa.
             </p>
             <p>
-              <span>2.COACHING:</span> si necesitas
+              <span className={styles.numero}>2.COACHING:</span> si necesitas
               <span>apoyo y entrenamientos específico</span> podrás ponerte en
               contacto con nuestros grandes <span>coaches,</span> expertos en el
               programa, en esta sección.
             </p>
             <p>
-              <span>3.PITS:</span> en esta sección podrás seguir tu puntuación,
+              <span className={styles.numero}>3.PITS:</span> en esta sección podrás seguir tu puntuación,
+              se te otorgará un <span>punto por cada paciente</span> que
+              integres al programa.
+            </p>
+            <p>
+              <span className={styles.numero}>4.RESULTADOS:</span> en esta sección podrás seguir tu puntuación,
               se te otorgará un <span>punto por cada paciente</span> que
               integres al programa.
             </p>
@@ -62,6 +68,7 @@ function rallyapoyandote() {
           </div>
         </div>
       </section>
+      <Footer/>
     </div>
   );
 }

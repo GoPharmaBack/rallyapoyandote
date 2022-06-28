@@ -20,7 +20,7 @@ function Nav() {
           <div className={styles.menu}>
             <ul>
               <Link href='/rallyapoyandote'>
-                <li className={styles.item}>RALLY APOYÁNDOTE®</li>
+                <li className={styles.item}>RALLY APOYÁNDOTE<sup>®</sup>  </li>
               </Link>
               <Link href='/pits'>
                 <li className={styles.item}>PITS</li>
