@@ -2,8 +2,9 @@ import Head from 'next/head';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import Image from 'next/image';
-import Mapa from '../img/mapa.png';
+import Mapa from '../img/pista.gif';
 import styles from '../styles/RA.module.scss';
+import Link from 'next/link';
 function rallyapoyandote() {
   return (
     <div>
@@ -20,55 +21,130 @@ function rallyapoyandote() {
       <Nav />
       <section className={styles.rallyapoyandote}>
         <div className={styles.contenedor}>
-          <Image
-            src={Mapa}
-            alt='Rally Apoyandote®'
-            className={styles.mapa}
-            width="500px"
-            height="285.41"
-            
-          />
           <div className={styles.contenedorTexto}>
             <h2 className={styles.header}>¡HOLA, PILOTO!</h2>
             <p>
-              Bienvenido al  
-              <span style={{marginLeft:"3px"}}>
-                 RALLY MÉXICO APOYANDOTE<sup>®</sup>,
+              Bienvenido al
+              <span style={{ marginLeft: '3px' }}>
+                RALLY MÉXICO APOYANDOTE<sup>®</sup>,
               </span>
               <br /> a continuación te contamos todo sobre esta gran carrera:
             </p>
             <p>
-              <span className={styles.numero}>1.BASES:</span> en esta sección podrás seguir tu
-              puntuación, se te otorgará un <span>punto por cada paciente</span>
-              que integres al programa.
+              Está circuito fue diseñado para ti que eres un gran competidor y
+              parte esencial de este equipo de alto rendimiento dentro de{' '}
+              <span>EISAI</span>{' '}
             </p>
             <p>
-              <span className={styles.numero}>2.COACHING:</span> si necesitas
-              <span>apoyo y entrenamientos específico</span> podrás ponerte en
-              contacto con nuestros grandes <span>coaches,</span> expertos en el
-              programa, en esta sección.
+              Sabemos que te gustan los retos y que llegar a la meta es tú
+              principal objetivo, por ello como parte de esta iniciativa te
+              invitamos a formar parte del{' '}
+              <span>RALLY MÉXICO “APOYÁNDOTE” </span>
             </p>
             <p>
-              <span className={styles.numero}>3.PITS:</span> en esta sección podrás seguir tu puntuación,
-              se te otorgará un <span>punto por cada paciente</span> que
-              integres al programa.
+              <span className={styles.numero}>Requisitos: </span>
+            </p>
+            <ol>
+              <li>Actitud</li>
+              <li>Compromiso</li>
+              <li>Consistencia</li>
+              <li>Estrategia</li>
+              <li>Objetivos Claros</li>
+            </ol>
+          </div>
+          <div className={styles.grupo}>
+            <div className={styles.boton}>
+              <Link href='/envivo'>
+                En vivo
+              </Link>
+            </div>
+            <small>Da clic y sigue la carrera en vivo</small>
+            <br />
+            <Image
+            src={Mapa}
+            alt='Rally Apoyandote®'
+            className={styles.mapa}
+            width='500px'
+            height='285.41'
+          />
+          </div>
+        
+        </div>
+        <div className={styles.contenedor}>
+        <div className={styles.contenedorTexto}>
+            <p>
+              Lo único que tienes que hacer es ayudarnos a materializar el
+              enfoque de{' '}
+              <span>
+                nuestra misión hhc en donde nuestro primer pensamiento es para
+                los pacientes y sus familias, y para aumentar los beneficios que
+                brinda la atención de la salud.{' '}
+              </span>
             </p>
             <p>
-              <span className={styles.numero}>4.RESULTADOS:</span> en esta sección podrás seguir tu puntuación,
-              se te otorgará un <span>punto por cada paciente</span> que
-              integres al programa.
+              Por ello te brindamos los Key Points de esta carrera para estar
+              siempre en la pole posición{' '}
+            </p>
+            <ol>
+              <li>
+                Promover con tus médicos el programa “Apoyándote” dándole a
+                conocer los grandes beneficios de este valioso programa{' '}
+              </li>
+              <li>
+                Lograr ingresar constantemente pacientes al programa de apoyo a
+                pacientes “Apoyándote” *Cada paciente contará como un punto que
+                te acerará al gran meta{' '}
+              </li>
+            </ol>
+            <p>
+              En este circuito contarás con expertos en el programa que te
+              ayudarán a mejorar tus resultados por lo que podrás buscar un
+              warm-up en la zona de Coaching y en la zona de Pits{' '}
+            </p>
+            <ul>
+              <li>
+                Coaching: Podrás solicitar apoyo para entrenamientos específicos
+                que te llevarán a mejorar tu estrategia promocional{' '}
+              </li>
+              <li>
+                Pits: Podrás solicitar materiales promocionales autorizados para
+                entregarlos a tus médicos{' '}
+              </li>
+            </ul>
+            <p>
+              Podrás seguir de cerca la carrera a través de la página{' '}
+              <Link href='/envivo'>
+                <span style={{cursor:"pointer"}}>rallyapoyandote.eisaiconnect.com.mx/envivo</span>
+              </Link>{' '}
+              y saber la posición de los demás pilotos.{' '}
+            </p>
+            <p>
+              Cada PoA (Q1) habrá revisión de resultados y podrás revisar los
+              avances que has tenido, así como conocer al Driver of the Q
+              (Piloto del Q), ¡quién está en la POLE POSITION!{' '}
+            </p>
+            <p>
+              ¡Los resultados se actualizarán mensualmente y al final de la
+              carrera en el Q4 podrías disfrutar de podio ganador! ¡¡¡Y ser
+              acreedor a un gran premio!!!{' '}
             </p>
 
             <p>
+              Únete a este reto: Sólo podremos tener verdadero éxito en nuestro
+              negocio si mejoramos los beneficios que ofrecemos a nuestros
+              pacientes, sus familias y al público en general.{' '}
+            </p>
+            <p style={{textAllign:"center"}}>
               <span>Muchas gracias,pilotos,</span> <br />
               por ser parte de eta gran carrera,
               <br />
               <span>RALLY MÉXICO APOYÁNDOTE</span>
             </p>
           </div>
-        </div>
+       </div>
       </section>
-      <Footer/>
+
+      <Footer />
     </div>
   );
 }

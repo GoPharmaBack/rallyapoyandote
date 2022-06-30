@@ -28,10 +28,10 @@ export default function Home() {
             <Link href='/contacto' >
               <p className={styles.boton}>COACHING</p>
             </Link>
-            <Link href='/contacto' >
+            <Link href='/corredores' >
               <p className={styles.boton}>CORREDORES</p>
             </Link>
-            <Link href='/reultados' >
+            <Link href='/resultados' >
               <p className={styles.boton}>RESULTADOS</p>
             </Link>
           </div>

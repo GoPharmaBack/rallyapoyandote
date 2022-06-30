@@ -1,8 +1,13 @@
+@import './libs/mixins';
+
 .rallyapoyandote {
-  height: 90vh;
+  margin-top: 15vh;
+  min-height: 90vh;
+  height: auto;
   width: 100%;
   padding: 20px;
   display: flex;
+  flex-flow: column;
   align-items: center;
   justify-content: center;
 }
@@ -10,25 +15,50 @@
   flex: 1;
 }
 .contenedor {
+  box-sizing: border-box;
+  max-width: 1080px;
+  width: 100%;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
+  @include phone{
+    flex-direction: column;
+  }
 }
 
 .contenedorTexto {
+  padding: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   flex: 1;
-  text-align: center;
-  padding: 1rem;
-  max-width: 480px;
-  p{margin: 0px 0  8px 0;}
+  text-align: left;
+
+  box-sizing: border-box;
+
+  p {
+    margin: 0px 0 8px 0;
+  }
   span {
     margin-left: 5px;
     font-weight: bolder;
     color: #c3006d;
+  }
+  ol,
+  ul,
+  li {
+    text-align: left !important;
+  }
+  @include phone {
+    max-width: 300px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    flex-flow: column;
+    display: flex;
   }
 }
 
@@ -38,4 +68,26 @@
 
 .numero {
   color: #006c95 !important;
+}
+.boton {
+  text-align: center;
+  max-width: 140px;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 0.7rem;
+  color: #fafafa;
+  background-color: #d40d7f;
+  border-radius: 2rem 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: #1c8bb6;
+  }
+}
+
+.grupo {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: column;
 }
