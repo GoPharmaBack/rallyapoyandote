@@ -1,13 +1,101 @@
 @font-face {
-  font-family: 'Vox';
-  src: url('/fonts/VoxRegular.ttf') format('ttf'),
-    
+  font-family: 'voxregular_14';
+  src: url('../fonts/vox_bold_italic-webfont.woff') format('woff2'),
+    url('/fonts/vox_bold_italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
+@font-face {
+  font-family: 'voxregular_15';
+  src: url('../fonts/vox_bold-webfont.woff2') format('woff2'),
+    url('../fonts/vox_bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'voxregular';
+  src: url('../fonts/vox_italic-webfont.woff2') format('woff2'),
+    url('../fonts/vox_italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'voxregular_13';
+  src: url('../fonts/vox_light_italic-webfont.woff2') format('woff2'),
+    url('../fonts/vox_light_italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'voxregular_3';
+  src: url('../fonts/vox_light-webfont.woff2') format('woff2'),
+    url('../fonts/vox_light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'voxregular_17';
+  src: url('../fonts/vox_medium_italic-webfont.woff2') format('woff2'),
+    url('../fonts/vox_medium_italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'voxregular_19';
+  src: url('../fonts/vox_medium-webfont.woff2') format('woff2'),
+    url('../fonts/vox_medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'voxregular_11';
+  src: url('../fonts/vox_semibold_italic-webfont.woff2') format('woff2'),
+    url('../fonts/vox_semibold_italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'voxregular_16';
+  src: url('../fonts/vox_semibold-webfont.woff2') format('woff2'),
+    url('../fonts/vox_semibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'voxregular_5';
+  src: url('../fonts/vox_wide_bold_italic-webfont.woff2') format('woff2'),
+    url('../fonts/vox_wide_bold_italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'voxregular_2';
+  src: url('../fonts/vox_wide_bold-webfont.woff2') format('woff2'),
+    url('../fonts/vox_wide_bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'voxregular_7';
+  src: url('../fonts/vox_wide_italic-webfont.woff2') format('woff2'),
+    url('../fonts/vox_wide_italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 html,
 body {
- 
-  background-image: url('../img/bg-grey.png');
+  background-image: url('../fonts/../img/bg-grey.png');
   background-image: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,7 +103,7 @@ body {
 
   padding: 0;
   margin: 0;
-  font-family: 'Vox';
+  font-family: 'voxregular_19';
 }
 
 a {
@@ -27,6 +115,17 @@ a {
   box-sizing: border-box;
 }
 
-a{
+a {
   cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'voxregular_2';
+  font-weight: normal;
+  font-style: normal;
 }
