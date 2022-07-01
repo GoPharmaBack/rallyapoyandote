@@ -28,15 +28,20 @@ function rallyapoyandote() {
               <span style={{ marginLeft: '3px' }}>
                 RALLY MÉXICO APOYANDOTE<sup>®</sup>,
               </span>
-              <br /> a continuación te contamos todo sobre esta gran carrera:
+              <br /> a continuación te contamos todo sobre esta gran carrera.
             </p>
             <p>
-            Este circuito fue diseñado para ti que eres un gran competidor y parte esencial de este equipo de alto rendimiento dentro de 
+              Este circuito fue diseñado para ti, que eres un gran competidor y
+              parte esencial de este equipo de alto rendimiento dentro de
               <span>EISAI</span>{' '}
             </p>
             <p>
-            Sabemos que te gustan los retos y que llegar a la meta es tú principal objetivo, por ello como parte de esta iniciativa te invitamos a formar parte del  
-              <span>RALLY MÉXICO APOYÁNDOTE<sup>®</sup> </span>
+              Sabemos que te gustan los retos y que llegar a la meta es tú
+              principal objetivo, por ello como parte de esta iniciativa te
+              invitamos a formar parte del:
+              <span>
+                RALLY MÉXICO APOYÁNDOTE<sup>®</sup>{' '}
+              </span>
             </p>
             <p>
               <span className={styles.numero}>Requisitos: </span>
@@ -52,78 +57,101 @@ function rallyapoyandote() {
           </div>
           <div className={styles.grupo}>
             <div className={styles.boton}>
-              <Link href='/envivo'>
-                En vivo
-              </Link>
+              <Link href='/envivo'>En vivo</Link>
             </div>
             <small>Da clic y sigue la carrera en vivo</small>
             <br />
             <Image
-            src={Mapa}
-            alt='Rally Apoyandote®'
-            className={styles.mapa}
-            width='500px'
-            height='285.41'
-          />
+              src={Mapa}
+              alt='Rally Apoyandote®'
+              className={styles.mapa}
+              width='500px'
+              height='285.41'
+            />
           </div>
-        
         </div>
         <div className={styles.contenedor}>
-        <div className={styles.contenedorTexto}>
+          <div className={styles.contenedorTexto}>
             <p>
-            Lo único que tienes que hacer es ayudarnos a materializar el enfoque de nuestra misión <i>hhc</i> en donde
+              Lo único que tienes que hacer es ayudarnos a materializar el
+              enfoque de nuestra misión <i>hhc</i> en donde
               <span>
-              nuestro primer pensamiento es para los pacientes y sus familias, y para aumentar los beneficios que brinda la atención de la salud. 
+                nuestro primer pensamiento es para los pacientes y sus familias,
+                y para aumentar los beneficios que brinda la atención de la
+                salud.
               </span>
             </p>
             <p>
-            Por ello te brindamos los Key Points de esta carrera para estar siempre en la <span>POLE POSITION </span>
+              Por ello te brindamos los Key Points de esta carrera para estar
+              siempre en la <span>POLE POSITION </span>
             </p>
             <ol>
               <li>
-              Promover con tus médicos el programa “Apoyándote” dándole a conocer los grandes beneficios de este valioso programa a pacientes 
+                Promover con tus médicos el programa “Apoyándote” dándole a
+                conocer los grandes beneficios de este valioso programa para
+                pacientes.
               </li>
               <li>
-              Sensibilizar al médico sobre la gran aportación de este programa para sus pacientes 
+                Sensibilizar al médico sobre la gran aportación de este programa
+                para sus pacientes.
               </li>
               <li>
-              Lograr la misión de ingresar constantemente a pacientes a través del médico 
-
-*Cada paciente contará como un punto que te acerará al gran meta 
+                Lograr la misión de ingresar constantemente a pacientes a través
+                del médico. Cada paciente contará como un punto que te acerará a
+                la gran meta.
               </li>
             </ol>
             <p>
-            En este circuito contarás con expertos en el programa que te ayudarán a mejorar tus resultados por lo que podrás buscar un warm-up en la zona de Coaching y en la zona de Pits 
+              En este circuito contarás con expertos en el programa que te
+              ayudarán a mejorar tus resultados por lo que podrás buscar un
+              warm-up en la zona de Coaching y en la zona de Pits
             </p>
             <ul>
               <li>
-                Coaching: Podrás solicitar apoyo para entrenamientos específicos que te llevarán a mejorar tu estrategia promocional 
+                Coaching: Podrás solicitar apoyo para entrenamientos específicos
+                que te llevarán a mejorar tu estrategia promocional.
               </li>
               <li>
-                Pits: Podrás solicitar materiales promocionales autorizados para entregarlos a tus médicos 
+                Pits: Podrás solicitar materiales promocionales autorizados para
+                entregarlos a tus médicos.
               </li>
             </ul>
             <p>
-              Podrás seguir de cerca la carrera a través de esta <Link href='/envivo'>
-                <span style={{cursor:"pointer"}}>página </span>
-              </Link>{' '} y saber la posición de los demás pilotos.{' '}
-              <br />
-             
-             {' '}
+              Podrás seguir de cerca la carrera a través de esta{' '}
+              <Link href='/envivo'>
+                <span style={{ cursor: 'pointer' }}>página </span>
+              </Link>{' '}
+              y saber la posición de los demás pilotos. <br />{' '}
             </p>
             <p>
-            Cada PoA habrá revisión de resultados y podrás revisar los avances que has tenido, así como conocer al Piloto del Q, ¡quién está en la POLE POSITION! 
+              Cada PoA habrá revisión de resultados y podrás revisar los avances
+              que has tenido, así como, conocer al Piloto del Q que se encuentra
+              en la ¡POLE POSITION!
             </p>
             <p>
-            ¡Los resultados se actualizarán mensualmente y al final de la carrera (marzo 2023) podremos saber quién fue el piloto ganador y tú podrías subirte al podio ganador! ¡¡¡Y ser acreedor a un gran premio!!! 
+              ¡Los resultados se actualizarán mensualmente y al final de la
+              carrera (marzo 2023) podremos saber quién fue el piloto ganador.
             </p>
-<h5>Únete a este reto:</h5>
             <p>
-            Sólo podremos tener verdadero éxito en nuestro negocio si mejoramos los beneficios que ofrecemos a nuestros pacientes, sus familias y al público en general. 
+              ¡Tú podrías subirte al podio ganador y ser acreedor a un gran
+              premio!{' '}
             </p>
-           
+            <h5>¡Únete a este reto! </h5>
+            <p>
+              Sólo podremos tener verdadero éxito en nuestro negocio si
+              mejoramos los beneficios que ofrecemos a nuestros pacientes, sus
+              familias y al público en general.
+            </p>
+
+            <p>Muchas gracias, pilotos,</p>
+            <p>por ser parte de esta gran carrera, </p>
+            <p>
+              <span>
+                RALLY MÉXICO APOYÁNDOTE<sup>®</sup>.
+              </span>
+            </p>
           </div>
-       </div>
+        </div>
       </section>
 
       <Footer />
