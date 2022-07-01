@@ -36,7 +36,7 @@ function rallyapoyandote() {
             </p>
             <p>
             Sabemos que te gustan los retos y que llegar a la meta es tú principal objetivo, por ello como parte de esta iniciativa te invitamos a formar parte del  
-              <span>RALLY MÉXICO “APOYÁNDOTE<sup>®</sup>" </span>
+              <span>RALLY MÉXICO APOYÁNDOTE<sup>®</sup> </span>
             </p>
             <p>
               <span className={styles.numero}>Requisitos: </span>
