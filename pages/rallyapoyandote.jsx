@@ -9,8 +9,8 @@ function rallyapoyandote() {
   return (
     <div>
       <Head>
-        <title>Rally Apoyandote®</title>
-        <meta name='description' content='Rally Apoyandote®' />
+        <title>Rally Apoyándote®</title>
+        <meta name='description' content='Rally Apoyándote®' />
         <link rel='icon' href='/icon.png' />
         <meta property='og:image' content='/portada.png' />
         <meta property='og:title' content='Rally Apoyandote® Eisai' />
@@ -26,23 +26,22 @@ function rallyapoyandote() {
             <p>
               Bienvenido al
               <span style={{ marginLeft: '3px' }}>
-                RALLY MÉXICO APOYANDOTE<sup>®</sup>,
+                RALLY MÉXICO APOYÁNDOTE<sup>®</sup>,
               </span>
               <br /> a continuación te contamos todo sobre esta gran carrera.
             </p>
             <p>
               Este circuito fue diseñado para ti, que eres un gran competidor y
               parte esencial de este equipo de alto rendimiento dentro de
-              <span>EISAI</span>{' '}
+              <span>EISAI.</span>{' '}
             </p>
             <p>
-              Sabemos que te gustan los retos y que llegar a la meta es tú
-              principal objetivo, por ello como parte de esta iniciativa te
-              invitamos a formar parte del:
+            Sabemos que te gustan los retos y que llegar a la meta es tú principal objetivo, por ello, como parte de esta iniciativa te invitamos a formar parte del:
               <span>
                 RALLY MÉXICO APOYÁNDOTE<sup>®</sup>{' '}
               </span>
             </p>
+            <br />
             <p>
               <span className={styles.numero}>Requisitos: </span>
             </p>
@@ -82,7 +81,7 @@ function rallyapoyandote() {
               </span>
             </p>
             <p>
-              Por ello te brindamos los Key Points de esta carrera para estar
+              Por ello, te brindamos los Key Points de esta carrera para estar
               siempre en la <span>POLE POSITION </span>
             </p>
             <ol>
@@ -108,11 +107,12 @@ function rallyapoyandote() {
             </p>
             <ul>
               <li>
-                Coaching: Podrás solicitar apoyo para entrenamientos específicos
+                <span>Coaching:</span> Podrás solicitar apoyo para entrenamientos específicos
                 que te llevarán a mejorar tu estrategia promocional.
               </li>
               <li>
-                Pits: Podrás solicitar materiales promocionales autorizados para
+                <span> Pits: </span>
+                Podrás solicitar materiales promocionales autorizados para
                 entregarlos a tus médicos.
               </li>
             </ul>
@@ -136,18 +136,18 @@ function rallyapoyandote() {
               ¡Tú podrías subirte al podio ganador y ser acreedor a un gran
               premio!{' '}
             </p>
-            <h5>¡Únete a este reto! </h5>
+            <h2 className={styles.unete}>¡Únete a este reto! </h2>
             <p>
               Sólo podremos tener verdadero éxito en nuestro negocio si
               mejoramos los beneficios que ofrecemos a nuestros pacientes, sus
               familias y al público en general.
             </p>
 
-            <p>Muchas gracias, pilotos,</p>
-            <p>por ser parte de esta gran carrera, </p>
+            <h3 className={styles.unete}>Muchas gracias, pilotos,<br/>
+            por ser parte de esta gran carrera, </h3>
             <p>
-              <span>
-                RALLY MÉXICO APOYÁNDOTE<sup>®</sup>.
+              <span style={{margin:"0px"}}>
+              RALLY MÉXICO APOYÁNDOTE<sup>®</sup>.
               </span>
             </p>
           </div>

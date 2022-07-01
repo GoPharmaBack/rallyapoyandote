@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Rally Apoyandote®</title>
+        <title>Rally Apoyándote®</title>
         <meta name='description' content='Rally Apoyandote® Eisai' />
         <link rel='icon' href='/icon.png' />
         <meta property='og:image' content='/portada.png' />
@@ -20,7 +20,7 @@ export default function Home() {
           <h1 className={styles.textGradient}>Nuestra meta:<br/> el cuidado de la<br/> salud humana</h1>
           <div className={styles.botonesHome}>
             <Link href='/rallyapoyandote' >
-              <p className={styles.boton}>RALLY APOYANDOTE<sup>®</sup> </p>
+              <p className={styles.boton}>RALLY APOYÁNDOTE<sup>®</sup> </p>
             </Link>
             <Link href='/servicios' >
               <p className={styles.boton}>PITS</p>

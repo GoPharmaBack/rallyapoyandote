@@ -43,6 +43,7 @@
     margin: 0px 0 8px 0;
   }
   span {
+    font-size: 1.4rem;
     margin-left: 5px;
     font-weight: bolder;
     color: #c3006d;
@@ -67,6 +68,7 @@
 }
 
 .numero {
+  font-size: 1.4rem;
   color: #006c95 !important;
 }
 .boton {
@@ -91,3 +93,9 @@
   display: flex;
   flex-flow: column;
 }
+
+
+.unete,.header{
+  color: #006c95;
+}
+
