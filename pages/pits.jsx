@@ -1,77 +1,29 @@
 import Image from 'next/image';
 import React from 'react';
 import Nav from '../components/Nav';
+import Footer from '../components/Footer';
 import styles from '../styles/pits.module.scss';
-import Invitaciones from '../img/invitacion.svg';
+import Link from 'next/link';
 function pits() {
   return (
     <>
       <Nav />
       <section className={styles.section}>
         <div className={styles.contenedor}>
-          <div className={styles.texto}>
-            <div className={styles.textoImg}>
-              <h1>Pits</h1>
-            </div>
-            <h2 style={{textAlign:'center'}}>
-              <span className={styles.rosa}>¿Has venido por más herramientas?</span><br />
-              <span className={styles.azul}> 
-                Elige los materiales</span><br /> que
-              necesitas para esta gran carrera
-            </h2>
+          <div className={styles.selector}>
+            <h1>Escoge la marca de la que requieras un material </h1>
           </div>
-          <div className={styles.botones}>
-            <div className={styles.botonr}>
-              <a href='/static/brand-resources/Brand-Icons.zip' download>
-                Invitaciones pacientes
-                <Image
-                  src={Invitaciones}
-                  alt='Invitaciones pacientes'
-                  className={styles.mapa}
-                  width='500px'
-                  height='285.41'
-                />
-              </a>
-            </div>
-            <div className={styles.boton}>
-              <a href='/static/brand-resources/Brand-Icons.zip' download>
-                Invitaciones pacientes
-                <Image
-                  src={Invitaciones}
-                  alt='Invitaciones pacientes'
-                  className={styles.mapa}
-                  width='500px'
-                  height='285.41'
-                />
-              </a>
-            </div>
-            <div className={styles.boton}>
-              <a href='/static/brand-resources/Brand-Icons.zip' download>
-                Invitaciones pacientes
-                <Image
-                  src={Invitaciones}
-                  alt='Invitaciones pacientes'
-                  className={styles.mapa}
-                  width='500px'
-                  height='285.41'
-                />
-              </a>
-            </div>
-            <div className={styles.botonr}>
-              <a href='/static/brand-resources/Brand-Icons.zip' download>
-                Invitaciones pacientes
-                <Image
-                  src={Invitaciones}
-                  alt='Invitaciones pacientes'
-                  className={styles.mapa}
-                  width='500px'
-                  height='285.41'
-                />
-              </a>
-            </div>
+          <div className={styles.selector}>
+            <Link href='/pitsLenvatinib'>
+              <div className={styles.selectorItemr}>Lenvatinib</div>
+            </Link>
+            <Link href='/pitsEribulina'>
+              <div className={styles.selectorItema}>Eribulina</div>
+            </Link>
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

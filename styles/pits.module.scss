@@ -10,12 +10,14 @@
   justify-content: center;
   padding-top: 15vh;
   height: 100%;
-  min-height: 100vh;
+  min-height: 90vh;
+
   .contenedor {
     display: flex;
     margin: auto;
     max-width: 1080px;
     width: 100%;
+    flex-flow: column;
     .texto,
     .botones {
       flex: 1;
@@ -54,11 +56,77 @@
     }
   }
 }
+.contenedorl {
+  display: flex;
+  margin: auto;
+  max-width: 1080px;
+  width: 100%;
 
+  .texto,
+  .botones {
+    flex: 1;
+  }
+  .texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .botones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+  .botonr a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #d4007f;
+    color: white;
+    padding: 1rem;
+    text-transform: uppercase;
+    box-sizing: border-box;
+  }
+  .boton a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #008bb7;
+    color: white;
+    padding: 1rem;
+    text-transform: uppercase;
+    box-sizing: border-box;
+  }
+}
 .rosa {
   color: #d4007f;
 }
 
 .azul {
   color: #008bb7;
+}
+
+.selector {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1080px;
+
+  .selectorItemr {
+    text-align: center;
+    background-color: #d4007f;
+    color: white;
+    width: 100%;
+    padding:3rem 1rem;
+    cursor: pointer;
+  }
+  .selectorItema {
+    text-align: center;
+    background-color: #008bb7;
+    color: white;
+    width: 100%;
+    padding:3rem 1rem;
+    cursor: pointer;
+  }
 }

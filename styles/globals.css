@@ -125,7 +125,37 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'voxregular_19';
+  font-family: 'voxregular_15';
   font-weight: normal;
   font-style: normal;
+}
+
+ul,ol {
+  list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+  content: '\2022'; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #d40d7f; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+
+ li {
+  counter-increment: list;
+  list-style-type: none;
+  position: relative;
+}
+
+/* Output the numbers using the counter() function, but use a custom color, and position the numbers how we want */
+ol li:before {
+  color: #d40d7f;
+  content: counter(list) ".";
+  left: -32px;
+  position: absolute;
+  text-align: right;
+  width: 26px;
 }
