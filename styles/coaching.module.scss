@@ -53,3 +53,38 @@
     margin: 0px;
   }
 }
+
+.textGradient {
+  text-transform: uppercase;
+  text-align: left;
+  /* Set the background color */
+  background: linear-gradient(to right, #d40d7f 0%, #1c8bb6 100%);
+  /* Mask the color to the text, and remove the rest  */
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Make the text fill color value transparent so the masked background color comes through */
+  -webkit-text-fill-color: transparent;
+}
+
+.coachingHead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    font-size: 4rem;
+    font-weight: lighter;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+.rosa {
+  color: #d40d7f;
+  font-size: 1.4rem;
+  font-weight: bolder;
+}
+
+.azul {
+  color: #008bb7;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}

@@ -5,6 +5,8 @@ import Nav from '../components/Nav';
 import styles from '../styles/coaching.module.scss';
 import CoachingA from '../img/coachingA.png';
 import logo from '../img/logo.png';
+import CoachingImg from '../img/coaching.png';
+
 function coaching() {
   return (
     <>
@@ -12,11 +14,20 @@ function coaching() {
       <section className={styles.coaching}>
         <div className={styles.coachingContenedor}>
           <div className='texto'>
-            <h2>COACHING</h2>
+            <div className={styles.coachingHead}>
+              <Image
+                src={CoachingImg }
+                alt='CoachingImg '
+                className={styles.logo}
+                width='86px'
+                height='86px'
+              />
+            <h1 className={styles.textGradient}>COACHING</h1>
+         </div>
            
-            <p>¡Has venido al lugar adecuado!<br />
-              Para <span>conocer a profundidad</span> la <span>estrategia </span><br />
-              que tenemos para <span>triunfar</span> en
+            <p><span className={styles.rosa}>¡Has venido al lugar adecuado!</span><br />
+              Para <span className={styles.azul}>conocer a profundidad</span> la <span className={styles.azul}>estrategia </span><br />
+              que tenemos para <span className={styles.azul}>triunfar</span> en
             </p>
             <Image
               src={logo}
