@@ -130,7 +130,8 @@ h6 {
   font-style: normal;
 }
 
-ul,ol {
+ul,
+ol {
   list-style: none; /* Remove default bullets */
 }
 
@@ -143,8 +144,7 @@ ul li::before {
   margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 
-
- li {
+li {
   counter-increment: list;
   list-style-type: none;
   position: relative;
@@ -153,7 +153,7 @@ ul li::before {
 /* Output the numbers using the counter() function, but use a custom color, and position the numbers how we want */
 ol li:before {
   color: #d40d7f;
-  content: counter(list) ".";
+  content: counter(list) '.';
   left: -32px;
   position: absolute;
   text-align: right;

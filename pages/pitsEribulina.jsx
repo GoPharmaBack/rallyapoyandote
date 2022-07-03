@@ -10,32 +10,30 @@ function pitsLenvatinib() {
   return (
     <>
       <Nav />
-      <section className={styles.section}>
-        <div className={styles.back}>
-          <Link href='/pits'>Regresar</Link>
+      <div className={styles.back}>
+          <Link href="/pits">Regresar</Link>
         </div>
-
+      <section className={styles.section}>
         <div className={styles.contenedorl}>
           <div className={styles.texto}>
-            <div className={styles.selectorhead}>
-              <div className={styles.iconHead}>
-                <Image
+          <div className={styles.selectorhead}>
+            <div className={styles.iconHead}>
+            <Image
                   src={Pits}
                   alt='Pits'
                   className={styles.pits}
                   width='100px'
                   height='100px'
                 />
-                <h1 className={styles.textGradient}>PITS LEVANTINIB</h1>
-              </div>
+              <h1 className={styles.textGradient}>PITS ERIBULINA</h1>
             </div>
-            <h2 style={{ textAlign: 'center', fontSize: '1.3rem' }}>
-              <span className={styles.rosa}>
-                ¿Has venido por más herramientas?
-              </span>
-              <br />
-              <span className={styles.azul}>Elige los materiales</span>
-              <br /> que necesitas para esta gran carrera
+            
+          </div>
+            <h2 style={{textAlign:'center'}}>
+              <span className={styles.rosa}>¿Has venido por más herramientas?</span><br />
+              <span className={styles.azul}> 
+                Elige los materiales</span><br /> que
+              necesitas para esta gran carrera
             </h2>
           </div>
           <div className={styles.botones}>
@@ -90,7 +88,7 @@ function pitsLenvatinib() {
           </div>
         </div>
       </section>
-      <Footer />
+      <Footer/>
     </>
   );
 }
