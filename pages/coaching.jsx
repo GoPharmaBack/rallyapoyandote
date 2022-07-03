@@ -13,9 +13,9 @@ function coaching() {
         <div className={styles.coachingContenedor}>
           <div className='texto'>
             <h2>COACHING</h2>
-            <p>¡Has venido al lugar adecuado!</p>
-            <p>
-              Para <span>conocer a profundidad</span> la <span>estrategia</span>
+           
+            <p>¡Has venido al lugar adecuado!<br />
+              Para <span>conocer a profundidad</span> la <span>estrategia </span><br />
               que tenemos para <span>triunfar</span> en
             </p>
             <Image
