@@ -1,0 +1,55 @@
+.coaching {
+  margin-top: 20vh;
+  height: auto;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  .coachingContenedor {
+    width: 100%;
+    height: 100%;
+    max-width: 1080px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .text {
+    flex: 1;
+  }
+  .botoneCoaching {
+    display: flex;
+    align-self: start;
+    justify-content: center;
+  }
+  .card1,
+  .card2 {
+    text-align: left;
+    color: white;
+    box-sizing: content-box;
+    flex: 1;
+    max-width: 267px;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    max-height: 462px;
+    cursor: pointer;
+  }
+  .card1 {
+    background-color: #d4007f;
+  }
+  .card2 {
+    background-color: #008bb7;
+  }
+  .coachingTexto {
+    padding: 1rem;
+  }
+
+  .coachingTexto h3 {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin: 0px;
+  }
+}
