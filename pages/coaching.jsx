@@ -6,6 +6,7 @@ import styles from '../styles/coaching.module.scss';
 import CoachingA from '../img/coachingA.png';
 import logo from '../img/logo.png';
 import CoachingImg from '../img/coaching.png';
+import Head from 'next/head';
 
 
 function Coaching() {
@@ -19,6 +20,16 @@ function Coaching() {
   return (
     <>
       <Nav />
+      <Head>
+        <title>Rally Apoyándote®</title>
+        <meta name='description' content='Rally Apoyandote® Eisai' />
+        <link rel='icon' href='/icon.png' />
+        <meta property='og:image' content='/portada.png' />
+        <meta property='og:title' content='Rally Apoyandote® Eisai' />
+        <meta property='og:description' content='Rally Apoyandote® Eisai' />
+        <meta property='og:image:width' content='768' />
+        <meta property='og:image:height' content='768' />
+      </Head>
       <section className={styles.coaching}>
         <div className={styles.coachingContenedor}>
           <div className='texto'>

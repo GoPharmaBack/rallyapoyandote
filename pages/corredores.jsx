@@ -5,9 +5,20 @@ import Nav from '../components/Nav';
 import styles from '../styles/corredores.module.scss';
 import Corredores from '../img/corredores.png';
 import Corredor from '../img/corredor.png';
+import Head from 'next/head';
 function corredores() {
   return (
     <>
+        <Head>
+        <title>Rally Apoyándote®</title>
+        <meta name='description' content='Rally Apoyandote® Eisai' />
+        <link rel='icon' href='/icon.png' />
+        <meta property='og:image' content='/portada.png' />
+        <meta property='og:title' content='Rally Apoyandote® Eisai' />
+        <meta property='og:description' content='Rally Apoyandote® Eisai' />
+        <meta property='og:image:width' content='768' />
+        <meta property='og:image:height' content='768' />
+      </Head>
       <Nav />
       <section className={styles.corredores}>
         <div className={styles.contendor}>
@@ -34,7 +45,7 @@ function corredores() {
               <Image
                 src={Corredor}
                 alt='Rally Apoyandote®'
-                width={120}
+                width={"100%"}
                 height={120}
                 className={styles.corredorImg}
               />
@@ -50,7 +61,7 @@ function corredores() {
               <Image
                 src={Corredor}
                 alt='Rally Apoyandote®'
-                width={120}
+               width={"100%"}
                 height={120}
                 className={styles.corredorImg}
               />
@@ -66,7 +77,7 @@ function corredores() {
               <Image
                 src={Corredor}
                 alt='Rally Apoyandote®'
-                width={120}
+               width={"100%"}
                 height={120}
                 className={styles.corredorImg}
               />
@@ -82,7 +93,7 @@ function corredores() {
               <Image
                 src={Corredor}
                 alt='Rally Apoyandote®'
-                width={120}
+               width={"100%"}
                 height={120}
                 className={styles.corredorImg}
               />
@@ -98,7 +109,7 @@ function corredores() {
               <Image
                 src={Corredor}
                 alt='Rally Apoyandote®'
-                width={120}
+               width={"100%"}
                 height={120}
                 className={styles.corredorImg}
               />
@@ -114,7 +125,7 @@ function corredores() {
               <Image
                 src={Corredor}
                 alt='Rally Apoyandote®'
-                width={120}
+               width={"100%"}
                 height={120}
                 className={styles.corredorImg}
               />
