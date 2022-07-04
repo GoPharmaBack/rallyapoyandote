@@ -73,7 +73,7 @@ function rallyapoyandote() {
           <div className={styles.contenedorTexto}>
             <p>
               Lo único que tienes que hacer es ayudarnos a materializar el
-              enfoque de nuestra misión <i>hhc</i> en donde
+              enfoque de nuestra misión<i><span>hhc </span> </i> en donde
               <span>
                 nuestro primer pensamiento es para los pacientes y sus familias,
                 y para aumentar los beneficios que brinda la atención de la

@@ -6,8 +6,16 @@ import styles from '../styles/coaching.module.scss';
 import CoachingA from '../img/coachingA.png';
 import logo from '../img/logo.png';
 import CoachingImg from '../img/coaching.png';
+import Link from 'next/link';
 
-function coaching() {
+function Coaching() {
+  const Mailto = ({ email, subject = '', body = '', children }) => {
+    let params = subject || body ? '?' : '';
+    if (subject) params += `subject=${encodeURIComponent(subject)}`;
+    if (body) params += `${subject ? '&' : ''}body=${encodeURIComponent(body)}`;
+
+    return <a href={`mailto:${email}${params}`}>{children}</a>;
+  };
   return (
     <>
       <Nav />
@@ -16,17 +24,24 @@ function coaching() {
           <div className='texto'>
             <div className={styles.coachingHead}>
               <Image
-                src={CoachingImg }
+                src={CoachingImg}
                 alt='CoachingImg '
                 className={styles.logo}
                 width='86px'
                 height='86px'
               />
-            <h1 className={styles.textGradient}>COACHING</h1>
-         </div>
-           
-            <p><span className={styles.rosa}>¡Has venido al lugar adecuado!</span><br />
-              Para <span className={styles.azul}>conocer a profundidad</span> la <span className={styles.azul}>estrategia </span><br />
+              <h1 className={styles.textGradient}>COACHING</h1>
+            </div>
+
+            <p>
+              <span className={styles.rosa}>
+                ¡Has venido al lugar adecuado!
+              </span>
+              <br />
+              Para <span className={styles.azul}>
+                conocer a profundidad
+              </span> la <span className={styles.azul}>estrategia </span>
+              <br />
               que tenemos para <span className={styles.azul}>triunfar</span> en
             </p>
             <Image
@@ -38,21 +53,32 @@ function coaching() {
             />
           </div>
           <div className={styles.botoneCoaching}>
-            <div className={styles.card1}>
-              <Image
-                src={CoachingA}
-                alt='coaching1'
-                className={styles.coachingImagen}
-                width='267px'
-                height='331px'
-              />
-              <div className={styles.coachingTexto}>
-                <h3>
-                  <span>Carlos</span> Gavira
-                </h3>
-                <p>ASSOCIATE DIRECTOR OF MARKETING</p>
+            <Mailto
+              email='carlos_gavira@eisai.com'
+              subject='Hola, quiero agendar una sesion de Coaching'
+              body='Hola Carlos, me gustaría agendar una sesion de coaching'>
+            
+              <div className={styles.card1}>
+                <Image
+                  src={CoachingA}
+                  alt='coaching1'
+                  className={styles.coachingImagen}
+                  width='267px'
+                  height='331px'
+                />
+                <div className={styles.coachingTexto}>
+                  <h3>
+                    <span>Carlos</span> Gavira
+                  </h3>
+                  <p>ASSOCIATE DIRECTOR OF MARKETING</p>
+                </div>
               </div>
-            </div>
+            </Mailto>
+            <Mailto
+              email='xochitl_gomez@eisai.com'
+              subject='Hola, quiero agendar una sesion de Coaching'
+              body='Hola Dra. Xochitl, me gustaría agendar una sesion de coaching'>
+            
             <div className={styles.card2}>
               <Image
                 src={CoachingA}
@@ -63,9 +89,11 @@ function coaching() {
               />
               <div className={styles.coachingTexto}>
                 <h3>Xochitl Gomez</h3>
-                <p>MEDICAL DIRECTOR</p>
+                  <p>MEDICAL DIRECTOR</p>
+                  
               </div>
             </div>
+            </Mailto>
           </div>
         </div>
       </section>
@@ -74,4 +102,4 @@ function coaching() {
   );
 }
 
-export default coaching;
+export default Coaching;

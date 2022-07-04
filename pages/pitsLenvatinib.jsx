@@ -6,13 +6,17 @@ import Invitaciones from '../img/invitacion.svg';
 import Pits from '../img/pits.svg';
 import Link from 'next/link';
 import Footer from '../components/Footer';
+import { BsArrowLeft } from 'react-icons/bs';
 function pitsLenvatinib() {
   return (
     <>
       <Nav />
       <section className={styles.section}>
-        <div className={styles.back}>
-          <Link href='/pits'>Regresar</Link>
+      <div className={styles.back}>
+        <Link href="/pits">
+        <p> < BsArrowLeft className={styles.backArrow} />
+          Regresar</p>
+        </Link>
         </div>
 
         <div className={styles.contenedorl}>
