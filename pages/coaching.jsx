@@ -21,7 +21,7 @@ function Coaching() {
     <>
       <Nav />
       <Head>
-        <title>Rally Apoyándote®</title>
+        <title>Rally Apoyándote® | Coaching</title>
         <meta name='description' content='Rally Apoyandote® Eisai' />
         <link rel='icon' href='/icon.png' />
         <meta property='og:image' content='/portada.png' />

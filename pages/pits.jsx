@@ -10,7 +10,7 @@ function pits() {
   return (
     <>
         <Head>
-        <title>Rally Apoyándote®</title>
+        <title>Rally Apoyándote® | PITS</title>
         <meta name='description' content='Rally Apoyandote® Eisai' />
         <link rel='icon' href='/icon.png' />
         <meta property='og:image' content='/portada.png' />

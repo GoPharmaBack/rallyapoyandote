@@ -12,7 +12,7 @@ function pitsLenvatinib() {
   return (
     <>
         <Head>
-        <title>Rally Apoyándote®</title>
+        <title>Rally Apoyándote® | Pits Eribulina</title>
         <meta name='description' content='Rally Apoyandote® Eisai' />
         <link rel='icon' href='/icon.png' />
         <meta property='og:image' content='/portada.png' />
