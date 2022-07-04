@@ -71,7 +71,7 @@ function corredores() {
               <p>PTS</p>
               </div>
               <div className={styles.name}>
-                <h3>103</h3>
+                <h3>104</h3>
                 <p>Anabel</p>
               </div>
               <Image
