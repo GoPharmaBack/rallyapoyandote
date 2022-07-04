@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 @font-face {
   font-family: 'voxregular_14';
   src: url('../fonts/vox_bold_italic-webfont.woff') format('woff2'),

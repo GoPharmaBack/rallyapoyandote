@@ -6,7 +6,7 @@ import styles from '../styles/coaching.module.scss';
 import CoachingA from '../img/coachingA.png';
 import logo from '../img/logo.png';
 import CoachingImg from '../img/coaching.png';
-import Link from 'next/link';
+
 
 function Coaching() {
   const Mailto = ({ email, subject = '', body = '', children }) => {

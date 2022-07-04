@@ -1,0 +1,33 @@
+.resultados {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  h1,
+  h2 {
+    font-size: 3rem;
+    font-weight: lighter;
+    margin: 0px;
+  }
+}
+.resultadosHead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.texto {
+  margin-left: 1rem;
+}
+.textGradient {
+  text-transform: uppercase;
+  text-align: left;
+  /* Set the background color */
+  background: linear-gradient(to right, #d40d7f 0%, #1c8bb6 100%);
+  /* Mask the color to the text, and remove the rest  */
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Make the text fill color value transparent so the masked background color comes through */
+  -webkit-text-fill-color: transparent;
+}
