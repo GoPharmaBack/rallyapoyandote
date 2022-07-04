@@ -22,10 +22,10 @@ export default function Home() {
             <Link href='/rallyapoyandote' >
               <p className={styles.boton}>RALLY APOYÁNDOTE<sup>®</sup> </p>
             </Link>
-            <Link href='/servicios' >
+            <Link href='/pits' >
               <p className={styles.boton}>PITS</p>
             </Link>
-            <Link href='/contacto' >
+            <Link href='/coaching' >
               <p className={styles.boton}>COACHING</p>
             </Link>
             <Link href='/corredores' >
