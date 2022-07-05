@@ -3,6 +3,9 @@ import React from 'react';
 import Nav from '../components/Nav';
 import styles from '../styles/pits.module.scss';
 import Invitaciones from '../img/invitacion.svg';
+import Carta from '../img/carta.svg';
+import Material from '../img/material.svg';
+import Ipps from '../img/ipps.svg';
 import Pits from '../img/pits.svg';
 import Link from 'next/link';
 import Footer from '../components/Footer';
@@ -61,44 +64,44 @@ function pitsLenvatinib() {
                   src={Invitaciones}
                   alt='Invitaciones pacientes'
                   className={styles.mapa}
-                  width='500px'
-                  height='285.41'
+                  width='60px'
+                  height='60px'
                 />
               </a>
             </div>
             <div className={styles.boton}>
               <a href='/static/brand-resources/Brand-Icons.zip' download>
-                Invitaciones pacientes
+                CARTA A MEDICOS
                 <Image
-                  src={Invitaciones}
+                  src={Carta}
                   alt='Invitaciones pacientes'
                   className={styles.mapa}
-                  width='500px'
-                  height='285.41'
+                  width='60px'
+                  height='60px'
                 />
               </a>
             </div>
             <div className={styles.boton}>
               <a href='/static/brand-resources/Brand-Icons.zip' download>
-                Invitaciones pacientes
+               MATERIAL MÉDICO
                 <Image
-                  src={Invitaciones}
+                  src={Material}
                   alt='Invitaciones pacientes'
                   className={styles.mapa}
-                  width='500px'
-                  height='285.41'
+                  width='60px'
+                  height='60px'
                 />
               </a>
             </div>
             <div className={styles.botonr}>
               <a href='/static/brand-resources/Brand-Icons.zip' download>
-                Invitaciones pacientes
+                ipp´s
                 <Image
-                  src={Invitaciones}
+                  src={Ipps}
                   alt='Invitaciones pacientes'
                   className={styles.mapa}
-                  width='500px'
-                  height='285.41'
+                  width='60px'
+                  height='60px'
                 />
               </a>
             </div>
