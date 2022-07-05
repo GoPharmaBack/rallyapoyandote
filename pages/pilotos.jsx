@@ -6,11 +6,11 @@ import styles from '../styles/corredores.module.scss';
 import Corredores from '../img/corredores.png';
 import Corredor from '../img/corredor.png';
 import Head from 'next/head';
-function corredores() {
+function pilotos() {
   return (
     <>
         <Head>
-        <title>Rally Apoyándote® | Corredores</title>
+        <title>Rally Apoyándote® | Pilotos</title>
         <meta name='description' content='Rally Apoyandote® Eisai' />
         <link rel='icon' href='/icon.png' />
         <meta property='og:image' content='/portada.png' />
@@ -31,7 +31,7 @@ function corredores() {
               className={styles.imgHead}
 
             />
-            <h1 className={styles.textGradient}>CORREDORES</h1>
+            <h1 className={styles.textGradient}>PILOTOS</h1>
           </div>
           <div className={styles.corredoresContenedor}>
             <div className={styles.corredor}>
@@ -139,4 +139,4 @@ function corredores() {
   )
 }
 
-export default corredores
+export default pilotos

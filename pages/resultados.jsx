@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image'
 import React from 'react'
+import Footer from '../components/Footer';
 import Nav from '../components/Nav'
 import Resultados from '../img/resultados.png'
 import styles from '../styles/resultados.module.scss';
@@ -39,6 +40,7 @@ function resultados() {
           </div>
           
       </section>
+      <Footer />
     </>
   )
 }

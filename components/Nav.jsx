@@ -35,8 +35,8 @@ function Nav() {
               <Link href='/coaching'>
                 <li className={styles.item}>COACHING</li>
               </Link>
-              <Link href='/corredores'>
-                <li className={styles.item}>CORREDORES</li>
+              <Link href='/pilotos'>
+                <li className={styles.item}>PILOTOS</li>
               </Link>
               <Link href='/resultados'>
                 <li className={styles.item}>RESULTADOS</li>
