@@ -1,12 +1,25 @@
 import Head from 'next/head'
 import React from 'react'
+import Footer from '../components/Footer'
+import Nav from '../components/Nav'
+import styles from '../styles/envivo.module.scss';
+import ProgressBar from '../components/ProgressBar';
 
+const RaceData = [
+  { bgcolor: "#F0BFE0", completed: 20, ruta: "../img/logo.png", name: "110 Lalo" },
+  { bgcolor: "#E284C2", completed: 50, ruta: "", name: "107 Mago" },
+  { bgcolor: "#D74EA4", completed: 30, ruta: "", name: "103 María" },
+  { bgcolor: "#9FDDEF", completed: 80, ruta: "", name: "102 Rosy" },
+  { bgcolor: "#55BEE0", completed: 30, ruta: "", name: "104 Anabel" },
+  { bgcolor: "#11A1D0", completed: 40, ruta: "", name: "105 Héctor" },
+];
 function envivo() {
+
   return (
     <div>
-      
+
       <Head>
-        <title>Rally Apoyándote®</title>
+        <title>Rally Apoyándote® | En vivo</title>
         <meta name='description' content='Rally Apoyandote® Eisai' />
         <link rel='icon' href='/icon.png' />
         <meta property='og:image' content='/portada.png' />
@@ -15,7 +28,21 @@ function envivo() {
         <meta property='og:image:width' content='768' />
         <meta property='og:image:height' content='768' />
       </Head>
-      envivo</div>
+      <Nav />
+      <section className={styles.envivo}>
+        <div className={styles.envivoContenedor}>
+          <h1 className={styles.textGradient}>
+            EN VIVO
+          </h1>
+          <div className={styles.contenedorBarras}>
+            {RaceData.map((item, idx) => (
+              <ProgressBar key={idx} bgcolor={item.bgcolor} completed={item.completed} name={item.name}  />
+            ))}
+          </div>
+        </div>
+      </section>
+      <Footer />
+    </div>
   )
 }
 

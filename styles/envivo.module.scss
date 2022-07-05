@@ -1,0 +1,61 @@
+.textGradient {
+  text-transform: uppercase;
+  text-align: left;
+  /* Set the background color */
+  background: linear-gradient(to right, #d40d7f 0%, #1c8bb6 100%);
+  /* Mask the color to the text, and remove the rest  */
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Make the text fill color value transparent so the masked background color comes through */
+  -webkit-text-fill-color: transparent;
+}
+
+.envivo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 90vh;
+  
+  .envivoContenedor {
+    max-width: 1080px;
+  }
+}
+
+.contenedorBarras {
+  width: 100%;
+}
+
+.back {
+  color: #4241415e;
+}
+
+.carro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 90vh;
+  .envivoContenedor {
+    max-width: 1080px;
+  }
+}
+
+.color {
+  color: #ffffff5e;
+}
+
+.textGradient {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: left;
+  /* Set the background color */
+  background: linear-gradient(to right, #d40d7f 0%, #1c8bb6 100%);
+  /* Mask the color to the text, and remove the rest  */
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Make the text fill color value transparent so the masked background color comes through */
+  -webkit-text-fill-color: transparent;
+}
