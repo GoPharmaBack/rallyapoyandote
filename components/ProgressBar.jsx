@@ -6,11 +6,12 @@ const ProgressBar = (props) => {
 
   const containerStyles = {
     height: 60,
-    width: '100%',
+    width: '100% !important',
     backgroundColor: "#e0e0de",
     borderRadius: 5,
     margin: 10,
-    minWidth: '700px'
+    minWidth: '900px',
+    maxWidth: '1080px',
   }
 
   const fillerStyles = {
@@ -57,7 +58,7 @@ const ProgressBar = (props) => {
           <span style={labelStyles}>
           {`${name}`}
             <Image
-              src={carro}
+              src={ruta}
               width={"66px"}
               height={"14px"}
               className={styles.carro}

@@ -6,12 +6,12 @@ import styles from '../styles/envivo.module.scss';
 import ProgressBar from '../components/ProgressBar';
 
 const RaceData = [
-  { bgcolor: "#F0BFE0", completed: 20, ruta: "../img/logo.png", name: "110 Lalo" },
-  { bgcolor: "#E284C2", completed: 50, ruta: "", name: "107 Mago" },
-  { bgcolor: "#D74EA4", completed: 30, ruta: "", name: "103 María" },
-  { bgcolor: "#9FDDEF", completed: 80, ruta: "", name: "102 Rosy" },
-  { bgcolor: "#55BEE0", completed: 30, ruta: "", name: "104 Anabel" },
-  { bgcolor: "#11A1D0", completed: 40, ruta: "", name: "105 Héctor" },
+  { bgcolor: "#F0BFE0", completed: 0, ruta: "/../public/lalocarro.png", name: "110 Lalo" },
+  { bgcolor: "#E284C2", completed: 0, ruta: "/../public/rosycarro.png", name: "107 Mago" },
+  { bgcolor: "#D74EA4", completed: 30, ruta: "/../public/CARROMARIA.png", name: "103 María" },
+  { bgcolor: "#9FDDEF", completed: 80, ruta: "/../public/rosycarro.png", name: "102 Rosy" },
+  { bgcolor: "#55BEE0", completed: 60, ruta: "/../public/CARROANABEL.png", name: "104 Anabel" },
+  { bgcolor: "#11A1D0", completed: 0, ruta: "/../public/CARROHECTOR.png", name: "105 Héctor" },
 ];
 function envivo() {
 
@@ -36,7 +36,7 @@ function envivo() {
           </h1>
           <div className={styles.contenedorBarras}>
             {RaceData.map((item, idx) => (
-              <ProgressBar key={idx} bgcolor={item.bgcolor} completed={item.completed} name={item.name}  />
+              <ProgressBar key={idx} bgcolor={item.bgcolor} completed={item.completed} name={item.name} ruta={item.ruta}  />
             ))}
           </div>
         </div>
