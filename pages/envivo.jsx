@@ -6,12 +6,12 @@ import styles from '../styles/envivo.module.scss';
 import ProgressBar from '../components/ProgressBar';
 
 const RaceData = [
-  { bgcolor: "#F0BFE0", completed: 0, ruta: "/lalocarro.png", name: "110 Lalo" },
-  { bgcolor: "#E284C2", completed: 0, ruta: "/rosycarro.png", name: "107 Mago" },
+  { bgcolor: "#F0BFE0", completed: 5, ruta: "/lalocarro.png", name: "110 Lalo" },
+  { bgcolor: "#E284C2", completed: 4, ruta: "/rosycarro.png", name: "107 Mago" },
   { bgcolor: "#D74EA4", completed: 30, ruta: "/CARROMARIA.png", name: "103 María" },
   { bgcolor: "#9FDDEF", completed: 80, ruta: "/rosycarro.png", name: "102 Rosy" },
   { bgcolor: "#55BEE0", completed: 60, ruta: "/CARROANABEL.png", name: "104 Anabel" },
-  { bgcolor: "#11A1D0", completed: 0, ruta: "/CARROHECTOR.png", name: "105 Héctor" },
+  { bgcolor: "#11A1D0", completed: 40, ruta: "/CARROHECTOR.png", name: "105 Héctor" },
 ];
 function envivo() {
 

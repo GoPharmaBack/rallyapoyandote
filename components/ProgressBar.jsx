@@ -6,12 +6,11 @@ const ProgressBar = (props) => {
 
   const containerStyles = {
     height: 60,
-    width: '100% !important',
+    width: '100%',
     backgroundColor: "#e0e0de",
     borderRadius: 5,
     margin: 10,
-    minWidth: '900px',
-    maxWidth: '1080px',
+    boxSizing: 'border-box',
   }
 
   const fillerStyles = {
@@ -63,6 +62,7 @@ const ProgressBar = (props) => {
               height={"14px"}
               className={styles.carro}
               alt="Carro"
+              layout="intrinsic"
             />
           </span>
 

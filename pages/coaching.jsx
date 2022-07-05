@@ -99,7 +99,7 @@ function Coaching() {
                 height='331px'
               />
               <div className={styles.coachingTexto}>
-                <h3>Xochitl Gomez</h3>
+                <h3>Xóchitl Gómez</h3>
                   <p>MEDICAL DIRECTOR</p>
                   
               </div>

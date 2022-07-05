@@ -19,6 +19,8 @@
   height: 90vh;
 
   .envivoContenedor {
+    margin-top: 10vh;
+    width: 100%;
     max-width: 1080px;
   }
 }
@@ -26,6 +28,9 @@
 .contenedorBarras {
   width: 100%;
   max-width: 1080px;
+  display: flex;
+  box-sizing: border-box;
+  flex-flow: column;
 }
 
 .back {
