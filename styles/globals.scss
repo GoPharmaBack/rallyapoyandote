@@ -175,3 +175,71 @@ ol li:before {
   /* Make the text fill color value transparent so the masked background color comes through */
   -webkit-text-fill-color: transparent;
 }
+
+.form-section {
+  //background-image: url('./img/bg-formd.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  min-height: 100vh;
+  height: 100% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  font-size: calc(7px + 2vmin);
+  color: #d40d7f;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 1rem;
+  .contenedor {
+    width: 100%;
+    margin: auto;
+    max-width: 1080px;
+    text-align: left !important;
+    box-sizing: border-box;
+  }
+  form {
+    box-sizing: border-box;
+    margin: auto;
+    font-family: 'voxregular_13';
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-flow: column;
+    width: 100%;
+    max-width: 700px;
+    .group-form {
+      box-sizing: border-box;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    input,
+    textarea {
+      font-family: 'voxregular_13';
+      padding: 0.5rem;
+      width: 90%;
+      margin: auto;
+      outline: none;
+      border: none;
+      border-radius: 0.2rem;
+    }
+  }
+}
+
+.btn-submit{
+  background-color: #d40d7f;
+  color: white;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+  font-family: 'voxregular_13';
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover{
+    background-color: #1c8bb6;
+    color: white;
+  }
+}
