@@ -4,7 +4,7 @@ import Nav from '../components/Nav';
 import styles from '../styles/pits.module.scss';
 import Invitaciones from '../img/invitacion.svg';
 import Carta from '../img/carta.svg';
-import Material from '../img/material.svg';
+//import Material from '../img/material.svg';
 import Ipps from '../img/ipps.svg';
 import Pits from '../img/pits.svg';
 import Link from 'next/link';
@@ -81,7 +81,7 @@ function pitsLenvatinib() {
                 />
               </a>
             </div>
-            <div className={styles.boton}>
+            {/* <div className={styles.boton}>
               <a href='/static/brand-resources/Brand-Icons.zip' download>
                MATERIAL MÉDICO
                 <Image
@@ -92,10 +92,10 @@ function pitsLenvatinib() {
                   height='60px'
                 />
               </a>
-            </div>
+            </div> */}
             <div className={styles.botonr}>
               <a href='/static/brand-resources/Brand-Icons.zip' download>
-                ipp´s
+                ipp
                 <Image
                   src={Ipps}
                   alt='Invitaciones pacientes'

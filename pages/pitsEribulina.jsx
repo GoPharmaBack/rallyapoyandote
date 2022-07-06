@@ -6,7 +6,7 @@ import Invitaciones from '../img/invitacion.svg';
 import Pits from '../img/pits.svg';
 import Link from 'next/link';
 import Carta from '../img/carta.svg';
-import Material from '../img/material.svg';
+//import Material from '../img/material.svg';
 import Ipps from '../img/ipps.svg';
 import Footer from '../components/Footer';
 import { BsArrowLeft } from 'react-icons/bs';
@@ -59,47 +59,47 @@ function pitsLenvatinib() {
               <a href='/static/brand-resources/Brand-Icons.zip' download>
                 Invitaciones pacientes
                 <Image
-                  src={Carta}
-                  alt='Invitaciones pacientes'
-                  className={styles.mapa}
-                  width='100px'
-                  height='100px'
-                />
-              </a>
-            </div>
-            <div className={styles.boton}>
-              <a href='/static/brand-resources/Brand-Icons.zip' download>
-                Invitaciones pacientes
-                <Image
                   src={Invitaciones}
                   alt='Invitaciones pacientes'
                   className={styles.mapa}
-                  width='100px'
-                  height='100px'
+                  width='60px'
+                  height='60px'
                 />
               </a>
             </div>
             <div className={styles.boton}>
               <a href='/static/brand-resources/Brand-Icons.zip' download>
-                Invitaciones pacientes
+                CARTA A MEDICOS
+                <Image
+                  src={Carta}
+                  alt='Invitaciones pacientes'
+                  className={styles.mapa}
+                  width='60px'
+                  height='60px'
+                />
+              </a>
+            </div>
+            {/* <div className={styles.boton}>
+              <a href='/static/brand-resources/Brand-Icons.zip' download>
+               MATERIAL MÉDICO
                 <Image
                   src={Material}
                   alt='Invitaciones pacientes'
                   className={styles.mapa}
-                  width='100px'
-                  height='100px'
+                  width='60px'
+                  height='60px'
                 />
               </a>
-            </div>
+            </div> */}
             <div className={styles.botonr}>
               <a href='/static/brand-resources/Brand-Icons.zip' download>
-                Invitaciones pacientes
+                ipp
                 <Image
                   src={Ipps}
                   alt='Invitaciones pacientes'
                   className={styles.mapa}
-                  width='100px'
-                  height='100px'
+                  width='60px'
+                  height='60px'
                 />
               </a>
             </div>

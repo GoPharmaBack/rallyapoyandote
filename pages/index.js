@@ -34,6 +34,9 @@ export default function Home() {
             <Link href='/resultados' >
               <p className={styles.boton}>RESULTADOS</p>
             </Link>
+            <Link href='/ruedaDePrensahhc' >
+              <p className={styles.boton}>RUEDA DE PRENSA HHC</p>
+            </Link>
           </div>
         </div>
       </main>

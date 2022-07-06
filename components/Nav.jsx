@@ -7,14 +7,16 @@ function Nav() {
     <>
       <nav className={styles.navbar}>
         <div className={styles.contenedorNav}>
+          <Link href="/">
           <Image
             src={Logo}
             alt='Rally Apoyandote®'
-            width={170}
-            height={50}
+            width={150}
+            height={40}
             className={styles.logoNav}
           />
 
+        </Link>
           <div className={styles.menu}>
             <ul>
               <Link href='/rallyapoyandote'>
@@ -40,6 +42,9 @@ function Nav() {
               </Link>
               <Link href='/resultados'>
                 <li className={styles.item}>RESULTADOS</li>
+              </Link>
+              <Link href='/ruedaDePrensahhc'>
+                <li className={styles.item}>RUEDA DE PRENSA HHC</li>
               </Link>
             </ul>
           </div>
