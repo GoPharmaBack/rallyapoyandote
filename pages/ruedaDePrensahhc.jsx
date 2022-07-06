@@ -72,7 +72,7 @@ function ruedaDePrensa() {
 
               <div className={styles.hhcManager}>
                 <div className={styles.titulo}>
-                  <h2>Xilacé Díaz</h2>
+                  <h2>Xilace Díaz</h2>
                   <p>HHC Manager</p>
                 </div>
                
