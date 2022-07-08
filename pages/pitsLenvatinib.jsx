@@ -58,7 +58,7 @@ function pitsLenvatinib() {
           </div>
           <div className={styles.botones}>
             <div className={styles.botonr}>
-              <a href='/static/brand-resources/Brand-Icons.zip' download>
+              <a href='/Digital_InvitacionPaciente_Lenvatinib.pdf' download>
                 Invitaciones pacientes
                 <Image
                   src={Invitaciones}
@@ -70,7 +70,7 @@ function pitsLenvatinib() {
               </a>
             </div>
             <div className={styles.boton}>
-              <a href='/static/brand-resources/Brand-Icons.zip' download>
+              <a href='/Digital_InformacionProgramaMedico.pdf' download>
                 CARTA A MEDICOS
                 <Image
                   src={Carta}
@@ -94,7 +94,7 @@ function pitsLenvatinib() {
               </a>
             </div> */}
             <div className={styles.botonr}>
-              <a href='/static/brand-resources/Brand-Icons.zip' download>
+              <a href='/10_IPPA_LENVIXI_EISAI.pdf' download>
                 ipp
                 <Image
                   src={Ipps}
