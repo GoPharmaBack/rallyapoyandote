@@ -2,7 +2,7 @@ import React from 'react'
 import Axios from 'axios';
 import { useState } from 'react';
 function Formulario() {
-  const url = 'https://mern-api-mmgroup-production.up.railway.app/api/submit';
+  const url = 'https://mern-api-eisai-production.up.railway.app/api/submit';
   const [data, dataSet] = useState({
     name: '',
     email: '',
