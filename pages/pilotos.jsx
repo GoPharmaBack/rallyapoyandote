@@ -6,12 +6,12 @@ import styles from '../styles/corredores.module.scss';
 import Corredores from '../img/corredores.png';
 import Corredor from '../img/corredor.png';
 import Head from 'next/head';
-import Lalo from '../img/EDUARDO_400x400.png';
-import Mago from '../img/MARGARITA_400X400.png';
-import Hector from '../img/HECTOR_400x400.png';
-import Anabel from '../img/ANABEL_400x400.png';
-import Maria from '../img/MARIA_400x400.png';
-import Rosy from '../img/ROSA_400X400.png';
+import Lalo from '../img/EDUARDO.png';
+import Mago from '../img/MARGARITA.png';
+import Hector from '../img/HECTOR.png';
+import Anabel from '../img/ANABEL.png';
+import Maria from '../img/MARIA.png';
+import Rosy from '../img/ROSA.png';
 function pilotos() {
   return (
     <>

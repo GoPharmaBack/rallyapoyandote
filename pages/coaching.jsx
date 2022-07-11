@@ -7,8 +7,8 @@ import CoachingA from '../img/coachingA.png';
 import logo from '../img/logo.png';
 import CoachingImg from '../img/coaching.png';
 import Head from 'next/head';
-import Charlie from '../img/CHARLIE_400X400.png';
-import Xochitl from '../img/XOCHITL_400X400.png';
+import Charlie from '../img/CHARLIE.png';
+import Xochitl from '../img/XOCHITL.png';
 
 function Coaching() {
   const Mailto = ({ email, subject = '', body = '', children }) => {
