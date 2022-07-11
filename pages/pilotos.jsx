@@ -6,6 +6,12 @@ import styles from '../styles/corredores.module.scss';
 import Corredores from '../img/corredores.png';
 import Corredor from '../img/corredor.png';
 import Head from 'next/head';
+import Lalo from '../img/EDUARDO_400x400.png';
+import Mago from '../img/MARGARITA_400X400.png';
+import Hector from '../img/HECTOR_400x400.png';
+import Anabel from '../img/ANABEL_400x400.png';
+import Maria from '../img/MARIA_400x400.png';
+import Rosy from '../img/ROSA_400X400.png';
 function pilotos() {
   return (
     <>
@@ -43,9 +49,9 @@ function pilotos() {
                 <p>Rosy</p>
               </div>
               <Image
-                src={Corredor}
+                src={Rosy}
                 alt='Rally Apoyandote®'
-                width={"100%"}
+                width={"95%"}
                 height={120}
                 className={styles.corredorImg}
               />
@@ -59,9 +65,9 @@ function pilotos() {
                 <p>María</p>
               </div>
               <Image
-                src={Corredor}
+                src={Maria}
                 alt='Rally Apoyandote®'
-               width={"100%"}
+               width={"95%"}
                 height={120}
                 className={styles.corredorImg}
               />
@@ -75,9 +81,9 @@ function pilotos() {
                 <p>Anabel</p>
               </div>
               <Image
-                src={Corredor}
+                src={Anabel}
                 alt='Rally Apoyandote®'
-               width={"100%"}
+               width={"95%"}
                 height={120}
                 className={styles.corredorImg}
               />
@@ -91,7 +97,7 @@ function pilotos() {
                 <p>Héctor</p>
               </div>
               <Image
-                src={Corredor}
+                src={Hector}
                 alt='Rally Apoyandote®'
                width={"100%"}
                 height={120}
@@ -107,9 +113,9 @@ function pilotos() {
                 <p>Mago</p>
               </div>
               <Image
-                src={Corredor}
+                src={Mago}
                 alt='Rally Apoyandote®'
-               width={"100%"}
+               width={"95%"}
                 height={120}
                 className={styles.corredorImg}
               />
@@ -123,7 +129,7 @@ function pilotos() {
                 <p>Lalo</p>
               </div>
               <Image
-                src={Corredor}
+                src={Lalo}
                 alt='Rally Apoyandote®'
                width={"100%"}
                 height={120}

@@ -7,7 +7,8 @@ import CoachingA from '../img/coachingA.png';
 import logo from '../img/logo.png';
 import CoachingImg from '../img/coaching.png';
 import Head from 'next/head';
-
+import Charlie from '../img/CHARLIE_400X400.png';
+import Xochitl from '../img/XOCHITL_400X400.png';
 
 function Coaching() {
   const Mailto = ({ email, subject = '', body = '', children }) => {
@@ -71,7 +72,7 @@ function Coaching() {
             
               <div className={styles.card1}>
                 <Image
-                  src={CoachingA}
+                  src={Charlie}
                   alt='coaching1'
                   className={styles.coachingImagen}
                   width='267px'
@@ -92,7 +93,7 @@ function Coaching() {
             
             <div className={styles.card2}>
               <Image
-                src={CoachingA}
+                src={Xochitl}
                 alt='coaching1'
                 className={styles.coachingImagen}
                 width='267px'
