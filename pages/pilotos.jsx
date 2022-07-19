@@ -6,6 +6,7 @@ import styles from '../styles/corredores.module.scss';
 import Corredores from '../img/corredores.png';
 
 import Head from 'next/head';
+import Link from 'next/link';
 
 function pilotos({ pilotos }) {
   return (
@@ -43,7 +44,9 @@ function pilotos({ pilotos }) {
               pilotos
                 .sort((a, b) => a.number.localeCompare(b.number))
                 .map((item, idx) => (
-                <div className={styles.fondo} key={idx} >
+                  <Link key={idx} href={`/piloto/${item._id}`}>
+                    <a  className={styles.fondo}>
+                    <div   >
                 <div className={styles.corredor}>
                     <div className={styles.puntos}> <span>{ item.points}</span>
                 <p>PTS</p>
@@ -61,6 +64,8 @@ function pilotos({ pilotos }) {
                 />
                   </div>
                   </div>
+                    </a>
+                  </Link>
               ))
             }
         </div>
