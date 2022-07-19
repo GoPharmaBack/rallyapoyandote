@@ -5,14 +5,7 @@ import Nav from '../components/Nav'
 import styles from '../styles/envivo.module.scss';
 import ProgressBar from '../components/ProgressBar';
 
-const RaceData = [
-  { bgcolor: "#F0BFE0", totalPacientes: 5, carImage: "/lalocarro.png", name: "110 Lalo" },
-  { bgcolor: "#E284C2", totalPacientes: 4, carImage: "/rosycarro.png", name: "107 Mago" },
-  { bgcolor: "#D74EA4", totalPacientes: 30, carImage: "/CARROMARIA.png", name: "103 María" },
-  { bgcolor: "#9FDDEF", totalPacientes: 80, carImage: "/rosycarro.png", name: "102 Rosy" },
-  { bgcolor: "#55BEE0", totalPacientes: 60, carImage: "/CARROANABEL.png", name: "104 Anabel" },
-  { bgcolor: "#11A1D0", totalPacientes: 40, carImage: "/CARROHECTOR.png", name: "105 Héctor" },
-];
+
 function envivo({ pilotos }) {
   
   console.log(pilotos);

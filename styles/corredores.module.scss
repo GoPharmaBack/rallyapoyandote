@@ -46,23 +46,30 @@
   width: 100%;
   height: auto;
 
-  .corredor {
-    max-width: 280px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+  .fondo {
     border-radius: 1rem;
     max-height: 120px;
     height: 100%;
     color: white;
     overflow: hidden;
-    &:nth-child(odd) {
-      background-color: #1c8bb6;
-    }
+    max-width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .fondo:nth-child(odd) {
+    background-color: #1c8bb6;
+  }
 
-    &:nth-child(even) {
-      background-color: #d40d7f;
-    }
+  .fondo:nth-child(even) {
+    background-color: #d40d7f;
+  }
+  .corredor {
+    max-width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
     .puntos {
       display: flex;
       align-items: center;
@@ -83,7 +90,7 @@
       font-size: 1.5rem;
       font-weight: lighter;
       margin: 0px;
-      h3{
+      h3 {
         font-size: 2rem;
         font-weight: bold;
         margin: 0px;
@@ -91,4 +98,9 @@
     }
   }
 }
-
+.imgHead {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-left: 1rem;
+}

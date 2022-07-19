@@ -4,15 +4,10 @@ import Footer from '../components/Footer';
 import Nav from '../components/Nav';
 import styles from '../styles/corredores.module.scss';
 import Corredores from '../img/corredores.png';
-import Corredor from '../img/corredor.png';
+
 import Head from 'next/head';
-import Lalo from '../img/EDUARDO.png';
-import Mago from '../img/MARGARITA.png';
-import Hector from '../img/HECTOR.png';
-import Anabel from '../img/ANABEL.png';
-import Maria from '../img/MARIA.png';
-import Rosy from '/img/ROSA.png';
-function pilotos() {
+
+function pilotos({ pilotos }) {
   return (
     <>
         <Head>
@@ -39,106 +34,41 @@ function pilotos() {
             />
             <h1 className={styles.textGradient}>PILOTOS</h1>
           </div>
-          <div className={styles.corredoresContenedor}>
-            <div className={styles.corredor}>
-              <div className={styles.puntos}> <span>0</span>
-              <p>PTS</p>
-              </div>
-              <div className={styles.name}>
-                <h3>102</h3>
-                <p>Rosy</p>
-              </div>
-              <Image
-                src={Rosy}
-                alt='Rally Apoyandote®'
-                width={"95%"}
-                height={120}
-                className={styles.corredorImg}
-              />
-            </div>
-            <div className={styles.corredor}>
-              <div className={styles.puntos}> <span>0</span>
-              <p>PTS</p>
-              </div>
-              <div className={styles.name}>
-                <h3>103</h3>
-                <p>María</p>
-              </div>
-              <Image
-                src={Maria}
-                alt='Rally Apoyandote®'
-               width={"95%"}
-                height={120}
-                className={styles.corredorImg}
-              />
-            </div>
-            <div className={styles.corredor}>
-              <div className={styles.puntos}> <span>0</span>
-              <p>PTS</p>
-              </div>
-              <div className={styles.name}>
-                <h3>104</h3>
-                <p>Anabel</p>
-              </div>
-              <Image
-                src={Anabel}
-                alt='Rally Apoyandote®'
-               width={"95%"}
-                height={120}
-                className={styles.corredorImg}
-              />
-            </div>
-            <div className={styles.corredor}>
-              <div className={styles.puntos}> <span>0</span>
-              <p>PTS</p>
-              </div>
-              <div className={styles.name}>
-                <h3>105</h3>
-                <p>Héctor</p>
-              </div>
-              <Image
-                src={Hector}
-                alt='Rally Apoyandote®'
-               width={"100%"}
-                height={120}
-                className={styles.corredorImg}
-              />
-            </div>
-            <div className={styles.corredor}>
-              <div className={styles.puntos}> <span>0</span>
-              <p>PTS</p>
-              </div>
-              <div className={styles.name}>
-                <h3>107</h3>
-                <p>Mago</p>
-              </div>
-              <Image
-                src={Mago}
-                alt='Rally Apoyandote®'
-               width={"95%"}
-                height={120}
-                className={styles.corredorImg}
-              />
-            </div>
-            <div className={styles.corredor}>
-              <div className={styles.puntos}> <span>0</span>
-              <p>PTS</p>
-              </div>
-              <div className={styles.name}>
-                <h3>110</h3>
-                <p>Lalo</p>
-              </div>
-              <Image
-                src={Lalo}
-                alt='Rally Apoyandote®'
-               width={"100%"}
-                height={120}
-                className={styles.corredorImg}
-              />
-            </div>
 
+          
+
+          <div className={styles.corredoresContenedor}>
+              
+          {
+              pilotos
+                .sort((a, b) => a.number.localeCompare(b.number))
+                .map((item, idx) => (
+                <div className={styles.fondo} key={idx} >
+                <div className={styles.corredor}>
+                    <div className={styles.puntos}> <span>{ item.points}</span>
+                <p>PTS</p>
+                </div>
+                <div className={styles.name}>
+                  <h3>{item.number}</h3>
+                  <p>{item.name}</p>
+                </div>
+                <Image
+                  src={item.image}
+                  alt={item.image}
+                  width={"95%"}
+                  height={120}
+                  className={styles.corredorImg}
+                />
+                  </div>
+                  </div>
+              ))
+            }
+        </div>
+
+          
+          
           </div>
-</div>
+
       </section>
       <Footer/>
     </>
@@ -146,3 +76,15 @@ function pilotos() {
 }
 
 export default pilotos
+
+
+
+export const getServerSideProps = async (ctx) => { 
+  const res = await fetch('https://rallyapoyandote.eisaiconnect.com.mx/api/pilotos')
+  const pilotos = await res.json()
+  
+  console.log(pilotos);
+  return {
+    props: { pilotos}
+  }
+}
