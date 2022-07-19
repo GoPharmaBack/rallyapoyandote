@@ -228,7 +228,7 @@ ol li:before {
   }
 }
 
-.btn-submit{
+.btn-submit {
   background-color: #d40d7f;
   color: white;
   border: none;
@@ -238,8 +238,12 @@ ol li:before {
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  &:hover{
+  &:hover {
     background-color: #1c8bb6;
     color: white;
   }
+}
+
+.ml {
+  margin-left: 0.5rem;
 }

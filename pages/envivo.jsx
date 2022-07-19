@@ -37,8 +37,10 @@ function envivo({ pilotos }) {
             EN VIVO
           </h1>
           <div className={styles.contenedorBarras}>
-            {RaceData.map((item, idx) => (
-              <ProgressBar key={idx} bgcolor={item.bgcolor} totalPacientes={item.totalPacientes} name={item.name} carImage={item.carImage}  />
+            {pilotos
+              .sort((a, b) => b.totalPacientes - a.totalPacientes)
+              .map((item, idx) => (
+              <ProgressBar key={idx} bgcolor={item.bgcolor} totalPacientes={item.totalPacientes} number={item.number} name={item.name} carImage={item.carImage}  />
             ))}
           </div>
         </div>

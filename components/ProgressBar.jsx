@@ -2,7 +2,7 @@ import Image from 'next/image';
 import carro from '../img/rosycarro.png';
 import styles from '../styles/envivo.module.scss';
 const ProgressBar = (props) => {
-  const { bgcolor, totalPacientes, carImage, name } = props;
+  const { bgcolor, totalPacientes, carImage, name, number } = props;
 
   const containerStyles = {
     height: 50,
@@ -38,26 +38,38 @@ const ProgressBar = (props) => {
     fontSize: '1.1rem',
     boxSizing: 'content-box',
     position: 'absolute',
-    minWidth: '200px',
+    minWidth: '240px',
     borderRadius: 'inherit',
     boxSizing: 'border-box',
     left: '0',
   };
+
+  const ml = {
+    marginRight: '0.5rem',
+    fontSize:"1.2rem"
+  }
 
   return (
     <>
       <div style={containerStyles}>
         <div style={fillerStyles}>
           <span style={labelStyles}>
-            {`${name}`}
-            <Image
-              src={carImage}
-              width={'66px'}
-              height={'14px'}
-              className={styles.carro}
-              alt='Carro'
-              layout='intrinsic'
-            />
+            <div>
+              {' '}
+              <span style={ml}>{`${number}`}</span>
+              <span>{`${name}`}</span>
+            </div>
+            <span>
+              {`${totalPacientes}`}
+              <Image
+                src={carImage}
+                width={'66px'}
+                height={'14px'}
+                className={styles.carro}
+                alt='Carro'
+                layout='intrinsic'
+              />
+            </span>
           </span>
         </div>
       </div>
