@@ -56,7 +56,7 @@ export default envivo
 
 
 export const getServerSideProps = async (ctx) => { 
-  const res = await fetch('http://localhost:3000/api/pilotos')
+  const res = await fetch('https://rallyapoyandote.eisaiconnect.com.mx/api/pilotos')
   const pilotos = await res.json()
   
   console.log(pilotos);
