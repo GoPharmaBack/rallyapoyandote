@@ -2,7 +2,7 @@ import Image from 'next/image';
 import carro from '../img/rosycarro.png';
 import styles from '../styles/envivo.module.scss';
 const ProgressBar = (props) => {
-  const { bgcolor, completed, ruta, name } = props;
+  const { bgcolor, totalPacientes, carImage, name } = props;
 
   const containerStyles = {
     height: 50,
@@ -15,7 +15,7 @@ const ProgressBar = (props) => {
 
   const fillerStyles = {
     height: '100%',
-    width: `${completed}%`,
+    width: `${totalPacientes}%`,
     backgroundColor: bgcolor,
     borderRadius: 'inherit',
     textAlign: 'right',
@@ -51,7 +51,7 @@ const ProgressBar = (props) => {
           <span style={labelStyles}>
             {`${name}`}
             <Image
-              src={ruta}
+              src={carImage}
               width={'66px'}
               height={'14px'}
               className={styles.carro}

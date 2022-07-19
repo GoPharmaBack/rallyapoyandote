@@ -6,14 +6,16 @@ import styles from '../styles/envivo.module.scss';
 import ProgressBar from '../components/ProgressBar';
 
 const RaceData = [
-  { bgcolor: "#F0BFE0", completed: 5, ruta: "/lalocarro.png", name: "110 Lalo" },
-  { bgcolor: "#E284C2", completed: 4, ruta: "/rosycarro.png", name: "107 Mago" },
-  { bgcolor: "#D74EA4", completed: 30, ruta: "/CARROMARIA.png", name: "103 María" },
-  { bgcolor: "#9FDDEF", completed: 80, ruta: "/rosycarro.png", name: "102 Rosy" },
-  { bgcolor: "#55BEE0", completed: 60, ruta: "/CARROANABEL.png", name: "104 Anabel" },
-  { bgcolor: "#11A1D0", completed: 40, ruta: "/CARROHECTOR.png", name: "105 Héctor" },
+  { bgcolor: "#F0BFE0", totalPacientes: 5, carImage: "/lalocarro.png", name: "110 Lalo" },
+  { bgcolor: "#E284C2", totalPacientes: 4, carImage: "/rosycarro.png", name: "107 Mago" },
+  { bgcolor: "#D74EA4", totalPacientes: 30, carImage: "/CARROMARIA.png", name: "103 María" },
+  { bgcolor: "#9FDDEF", totalPacientes: 80, carImage: "/rosycarro.png", name: "102 Rosy" },
+  { bgcolor: "#55BEE0", totalPacientes: 60, carImage: "/CARROANABEL.png", name: "104 Anabel" },
+  { bgcolor: "#11A1D0", totalPacientes: 40, carImage: "/CARROHECTOR.png", name: "105 Héctor" },
 ];
-function envivo() {
+function envivo({ pilotos }) {
+  
+  console.log(pilotos);
 
   return (
     <div>
@@ -36,7 +38,7 @@ function envivo() {
           </h1>
           <div className={styles.contenedorBarras}>
             {RaceData.map((item, idx) => (
-              <ProgressBar key={idx} bgcolor={item.bgcolor} completed={item.completed} name={item.name} ruta={item.ruta}  />
+              <ProgressBar key={idx} bgcolor={item.bgcolor} totalPacientes={item.totalPacientes} name={item.name} carImage={item.carImage}  />
             ))}
           </div>
         </div>
@@ -46,4 +48,17 @@ function envivo() {
   )
 }
 
+
+
 export default envivo
+
+
+export const getServerSideProps = async (ctx) => { 
+  const res = await fetch('http://localhost:3000/api/pilotos')
+  const pilotos = await res.json()
+  
+  console.log(pilotos);
+  return {
+    props: { pilotos}
+  }
+}

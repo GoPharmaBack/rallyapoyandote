@@ -8,13 +8,15 @@ function Nav() {
       <nav className={styles.navbar}>
         <div className={styles.contenedorNav}>
           <Link href="/">
-          <Image
+            <a>
+            <Image
             src={Logo}
             alt='Rally Apoyandote®'
             width={150}
             height={40}
             className={styles.logoNav}
           />
+         </a>
 
         </Link>
           <div className={styles.menu}>

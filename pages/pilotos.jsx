@@ -11,7 +11,7 @@ import Mago from '../img/MARGARITA.png';
 import Hector from '../img/HECTOR.png';
 import Anabel from '../img/ANABEL.png';
 import Maria from '../img/MARIA.png';
-import Rosy from '../img/ROSA.png';
+import Rosy from '/img/ROSA.png';
 function pilotos() {
   return (
     <>
