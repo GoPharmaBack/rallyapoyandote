@@ -22,7 +22,7 @@ function pilotos({ pilotos }) {
         <meta property='og:image:height' content='768' />
       </Head>
       <Nav />
-      <section className={styles.corredores}>
+      <section data-aos='fade-in' className={styles.corredores}>
         <div className={styles.contendor}>
           <div className={styles.corredoresHead}>
             <Image

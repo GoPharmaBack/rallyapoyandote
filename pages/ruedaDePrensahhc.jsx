@@ -21,7 +21,7 @@ function ruedaDePrensa() {
         <meta property='og:image:height' content='768' />
       </Head>
       <Nav />
-      <section className={styles.ruedaDePrensa}>
+      <section data-aos='fade-in' className={styles.ruedaDePrensa}>
         <div className={styles.contendorRueda}>
           <div className={styles.contenedorTexto}>
             <div className={styles.col}>

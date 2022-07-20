@@ -4,7 +4,7 @@
 
 .back {
   border-radius: 1rem;
-padding: 1rem;;  
+  padding: 1rem;
   left: 15vh;
   position: absolute;
   background-color: rgba(255, 255, 255, 0.5);
@@ -18,6 +18,9 @@ padding: 1rem;;
   flex-flow: column;
   align-items: center;
   justify-content: space-between;
+  span {
+    color: #d40d7f;
+  }
 }
 
 .contenedor {
@@ -43,13 +46,12 @@ padding: 1rem;;
   border-radius: 1rem;
   background-color: #ffffff;
   overflow: hidden;
-position: relative;
+  position: relative;
   display: flex;
   align-items: center;
 
   box-sizing: border-box;
- 
- 
+
   span {
     font-size: 1.8rem;
     font-weight: bold;
@@ -61,17 +63,16 @@ position: relative;
     align-items: center;
     justify-content: space-between;
     padding: 0 1rem;
- 
   }
-  .bottom{
+  .bottom {
     text-align: center;
-    height:100%;
+    height: 100%;
     width: 100%;
     display: flex;
     padding: 1rem;
     align-items: center;
     justify-content: center;
-  text-transform: uppercase;
+    text-transform: uppercase;
     background-color: #d40d7f;
     color: white;
   }

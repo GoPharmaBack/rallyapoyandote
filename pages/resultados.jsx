@@ -19,7 +19,7 @@ function resultados() {
         <meta property='og:image:height' content='768' />
       </Head>
       <Nav />
-      <section className={styles.resultados}>
+      <section data-aos='fade-in' className={styles.resultados}>
         <div className={styles.resultadosContenedor}>
           <div className='texto'>
             <div className={styles.resultadosHead}>

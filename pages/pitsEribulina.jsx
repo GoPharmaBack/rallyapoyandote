@@ -31,7 +31,7 @@ function pitsLenvatinib() {
           Regresar</p>
         </Link>
         </div>
-      <section className={styles.section}>
+      <section data-aos='fade-in' className={styles.section}>
         <div className={styles.contenedorl}>
           <div className={styles.texto}>
           <div className={styles.selectorhead}>

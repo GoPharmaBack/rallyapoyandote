@@ -25,7 +25,7 @@ function pitsLenvatinib() {
         <meta property='og:image:height' content='768' />
       </Head>
       <Nav />
-      <section className={styles.section}>
+      <section data-aos='fade-in' className={styles.section}>
       <div className={styles.back}>
         <Link href="/pits">
         <p> < BsArrowLeft className={styles.backArrow} />

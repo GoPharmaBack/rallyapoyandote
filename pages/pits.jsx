@@ -20,7 +20,7 @@ function pits() {
         <meta property='og:image:height' content='768' />
       </Head>
       <Nav />
-      <section className={styles.section}>
+      <section data-aos='fade-in' className={styles.section}>
         <div className={styles.contenedor}>
           <div className={styles.selectorhead}>
             <div className={styles.iconHead}>

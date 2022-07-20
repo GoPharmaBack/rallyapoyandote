@@ -24,7 +24,7 @@ function envivo({ pilotos }) {
         <meta property='og:image:height' content='768' />
       </Head>
       <Nav />
-      <section className={styles.envivo}>
+      <section data-aos='fade-in' className={styles.envivo}>
         <div className={styles.envivoContenedor}>
           <h1 className={styles.textGradient}>
             EN VIVO

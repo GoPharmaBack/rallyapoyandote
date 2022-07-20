@@ -2,11 +2,12 @@ import Nav from 'components/Nav';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 import styles from '/styles/pilotos.module.scss';
 import { BsArrowLeft } from 'react-icons/bs';
 import Footer from 'components/Footer';
 function PilitoView({ piloto }) {
+  
   return (
     <>
       <Head>
@@ -20,7 +21,7 @@ function PilitoView({ piloto }) {
         <meta property='og:image:height' content='768' />
       </Head>
       <Nav />
-      <section className={styles.piloto}>
+      <section data-aos='fade-in' className={styles.piloto}>
         <div className={styles.back}>
           <Link href='/pilotos'>
             <p>
@@ -30,10 +31,10 @@ function PilitoView({ piloto }) {
             </p>
           </Link>
         </div>
-        <div className={styles.contenedor}>
+        <div  data-aos='fade-in' className={styles.contenedor}>
           <div className='col'>
             <div className={styles.card}>
-              <div className={styles.top}>
+              <div className={styles.top} >
                 <span>{piloto.number}</span>
                 <Image
                   src={piloto.image}

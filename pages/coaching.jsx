@@ -31,7 +31,7 @@ function Coaching() {
         <meta property='og:image:width' content='768' />
         <meta property='og:image:height' content='768' />
       </Head>
-      <section className={styles.coaching}>
+      <section data-aos='fade-in' className={styles.coaching}>
         <div className={styles.coachingContenedor}>
           <div className='texto'>
             <div className={styles.coachingHead}>
