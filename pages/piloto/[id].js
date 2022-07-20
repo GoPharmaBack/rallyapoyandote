@@ -47,12 +47,9 @@ function PilitoView({ piloto }) {
             <div className={styles.card}>
               <div style={fillerStyles} className={styles.top}>
                 <span className={styles.shadow}>{piloto.number}</span>
-                <Image
-                  src={piloto.image}
-                  alt={piloto.name}
-                  width={167}
-                  height={189}
-                />
+                <figure>
+                  <img src={piloto.image} alt={piloto.name} />
+                </figure>
               </div>
               <div className={styles.bottom}>
                 <h1>{piloto.name}</h1>
