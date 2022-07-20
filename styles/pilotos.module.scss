@@ -77,3 +77,32 @@
     color: white;
   }
 }
+
+
+.shadow{
+  background-color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  
+  text-transform: uppercase;
+  text-align: left;
+  /* Set the background color */
+  background: linear-gradient(to left, #d40d7f 0%, #026784bf 100%);
+  /* Mask the color to the text, and remove the rest  */
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Make the text fill color value transparent so the masked background color comes through */
+  -webkit-text-fill-color: transparent;
+}
+
+.textGradient {
+  text-transform: uppercase;
+  text-align: left;
+  /* Set the background color */
+  background: linear-gradient(to right, #d40d7f 0%, #1c8bb6 100%);
+  /* Mask the color to the text, and remove the rest  */
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Make the text fill color value transparent so the masked background color comes through */
+  -webkit-text-fill-color: transparent;
+}

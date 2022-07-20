@@ -7,6 +7,18 @@ import styles from '/styles/pilotos.module.scss';
 import { BsArrowLeft } from 'react-icons/bs';
 import Footer from 'components/Footer';
 function PilitoView({ piloto }) {
+  const { bgcolor } = piloto;
+  const fillerStyles = {
+    height: '100%',
+    width: `100%`,
+    background: `linear-gradient(to bottom, #fff 50%, ${bgcolor} 100%)`,
+    textAlign: 'right',
+    boxShadow: '0px 3px 13px #4241415e',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    position: 'relative',
+  };
   return (
     <>
       <Head>
@@ -23,18 +35,18 @@ function PilitoView({ piloto }) {
       <section data-aos='fade-in' className={styles.piloto}>
         <div className={styles.back}>
           <Link href='/pilotos'>
-            <p>
+            <span>
               {' '}
               <BsArrowLeft className={styles.backArrow} />
               Regresar
-            </p>
+            </span>
           </Link>
         </div>
         <div data-aos='fade-in' className={styles.contenedor}>
           <div className='col'>
             <div className={styles.card}>
-              <div className={styles.top}>
-                <span>{piloto.number}</span>
+              <div style={fillerStyles} className={styles.top}>
+                <span className={styles.shadow}>{piloto.number}</span>
                 <Image
                   src={piloto.image}
                   alt={piloto.name}

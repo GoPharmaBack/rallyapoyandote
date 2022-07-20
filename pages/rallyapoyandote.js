@@ -1,9 +1,9 @@
 import Head from 'next/head';
-import Nav from '../components/Nav';
-import Footer from '../components/Footer';
+import Nav from '/components/Nav';
+import Footer from '/components/Footer';
 import Image from 'next/image';
-import Mapa from '../img/pista.gif';
-import styles from '../styles/RA.module.scss';
+import Mapa from '/img/pista.gif';
+import styles from '/styles/RA.module.scss';
 import Link from 'next/link';
 
 function rallyapoyandote() {
@@ -67,6 +67,7 @@ function rallyapoyandote() {
               className={styles.mapa}
               width='500px'
               height='285.41'
+              
             />
           </div>
         </div>

@@ -32,7 +32,7 @@ function envivo({ pilotos }) {
             </p>
         </Link>
       </div>
-      <section data-aos='fade-in' className={styles.envivo}>
+      <section  className={styles.envivo}>
         <div className={styles.envivoContenedor}>
           <h1 className={styles.textGradient}>EN VIVO</h1>
           <div className={styles.contenedorBarras}>
@@ -40,6 +40,7 @@ function envivo({ pilotos }) {
               .sort((a, b) => b.totalPacientes - a.totalPacientes)
               .map((item, idx) => (
                 <ProgressBar
+                data-aos='fade-in'
                   key={idx}
                   bgcolor={item.bgcolor}
                   totalPacientes={item.totalPacientes}
