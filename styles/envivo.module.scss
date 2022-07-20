@@ -54,3 +54,14 @@
   /* Make the text fill color value transparent so the masked background color comes through */
   -webkit-text-fill-color: transparent;
 }
+
+.back{
+  position: absolute;
+  top: 10vh;
+  left: 10vw;
+  color: #d40d7f;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  cursor: pointer;
+}

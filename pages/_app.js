@@ -10,6 +10,7 @@ function MyApp({ Component, pageProps }) {
       easing: 'ease-out-cubic',
       once: true,
       offset: 50,
+      throttleDelay: 30,
     });
   }, []);
 

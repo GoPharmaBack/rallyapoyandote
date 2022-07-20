@@ -7,7 +7,6 @@ import styles from '/styles/pilotos.module.scss';
 import { BsArrowLeft } from 'react-icons/bs';
 import Footer from 'components/Footer';
 function PilitoView({ piloto }) {
-  
   return (
     <>
       <Head>
@@ -31,10 +30,10 @@ function PilitoView({ piloto }) {
             </p>
           </Link>
         </div>
-        <div  data-aos='fade-in' className={styles.contenedor}>
+        <div data-aos='fade-in' className={styles.contenedor}>
           <div className='col'>
             <div className={styles.card}>
-              <div className={styles.top} >
+              <div className={styles.top}>
                 <span>{piloto.number}</span>
                 <Image
                   src={piloto.image}
