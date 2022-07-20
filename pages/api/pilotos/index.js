@@ -8,7 +8,7 @@ export default async function handler(req, res) {
     case 'GET':
       try {
         console.log(req.method, req.url);
-        const pilotos = await Piloto.find();
+        const pilotos = await Piloto.find().sort({points:-1});
         res.status(200).json(pilotos);
       } catch (error) {
         console.log(error);
