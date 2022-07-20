@@ -7,15 +7,19 @@ const ProgressBar = (props) => {
   const containerStyles = {
     height: 50,
     width: '100%',
+    maxWidth: '900px',
+    margin: '0 auto',
     backgroundColor: '#e0e0de',
     borderRadius: 5,
     margin: 3,
     boxSizing: 'border-box',
+    
   };
 
   const fillerStyles = {
     height: '100%',
-    width: `${totalPacientes}% `,
+   
+    width: `calc(${totalPacientes}% + 220px)`,
     backgroundColor: bgcolor,
     borderRadius: 'inherit',
     textAlign: 'right',
@@ -38,7 +42,7 @@ const ProgressBar = (props) => {
     fontSize: '1.1rem',
     boxSizing: 'content-box',
     position: 'absolute',
-    minWidth: '240px',
+    minWidth: '230px',
     borderRadius: 'inherit',
     boxSizing: 'border-box',
     left: '0',
@@ -55,7 +59,6 @@ const ProgressBar = (props) => {
         <div style={fillerStyles}>
           <span style={labelStyles}>
             <div>
-              {' '}
               <span style={ml}>{`${number}`}</span>
               <span>{`${name}`}</span>
             </div>
