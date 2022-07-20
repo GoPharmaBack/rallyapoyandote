@@ -20,7 +20,7 @@ function rallyapoyandote() {
         <meta property='og:image:height' content='768' />
       </Head>
       <Nav />
-      <section data-aos='fade-in' className={styles.rallyapoyandote}>
+      <section  className={styles.rallyapoyandote}>
         <div className={styles.contenedor}>
           <div className={styles.contenedorTexto}>
             <h2 className={styles.header}>¡HOLA, PILOTO!</h2>
