@@ -7,6 +7,7 @@ import styles from '/styles/RA.module.scss';
 import Link from 'next/link';
 
 function rallyapoyandote() {
+ 
   return (
     <div>
       <Head>
@@ -62,6 +63,7 @@ function rallyapoyandote() {
             <small>Da clic y sigue la carrera en vivo</small>
             <br />
             <Image
+              unoptimized={true}
               src={Mapa}
               alt='Rally Apoyandote®'
               className={styles.mapa}
