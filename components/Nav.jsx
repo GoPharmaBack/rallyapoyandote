@@ -33,6 +33,9 @@ function Nav() {
                   </sup>{' '}
                 </li>
               </Link>
+              <Link href='/envivo'>
+                <li className={styles.item}>EN VIVO</li>
+              </Link>
               <Link href='/pits'>
                 <li className={styles.item}>PITS</li>
               </Link>

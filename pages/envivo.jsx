@@ -6,6 +6,7 @@ import styles from '../styles/envivo.module.scss';
 import ProgressBar from '../components/ProgressBar';
 import Link from 'next/link';
 import { BsArrowLeft } from 'react-icons/bs';
+import  Router  from 'next/router';
 
 function envivo({ pilotos }) {
   console.log(pilotos);
@@ -24,13 +25,9 @@ function envivo({ pilotos }) {
       </Head>
       <Nav />
       <div className={styles.back}>
-        <Link href='/rallyapoyandote'>
-        <p>
-              {' '}
-              <BsArrowLeft className={styles.backArrow} />
-              Regresar
-            </p>
-        </Link>
+      <span onClick={() => Router.back()}> <BsArrowLeft className={styles.backArrow} /> Regresar</span>
+
+        
       </div>
       <section  className={styles.envivo}>
         <div className={styles.envivoContenedor}>
@@ -40,7 +37,7 @@ function envivo({ pilotos }) {
               .sort((a, b) => b.totalPacientes - a.totalPacientes)
               .map((item, idx) => (
                 <ProgressBar
-                data-aos='fade-in'
+                  data-aos='fade-in'
                   key={idx}
                   bgcolor={item.bgcolor}
                   totalPacientes={item.totalPacientes}

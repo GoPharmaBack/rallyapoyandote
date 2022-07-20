@@ -2,6 +2,9 @@ import Nav from 'components/Nav';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
+import Router from 'next/router';
+
 import React, { useState } from 'react';
 import styles from '/styles/pilotos.module.scss';
 import { BsArrowLeft } from 'react-icons/bs';
@@ -19,6 +22,7 @@ function PilitoView({ piloto }) {
     justifyContent: 'center',
     position: 'relative',
   };
+
   return (
     <>
       <Head>
@@ -38,9 +42,10 @@ function PilitoView({ piloto }) {
             <span>
               {' '}
               <BsArrowLeft className={styles.backArrow} />
-              Regresar
+              <span onClick={() => Router.back()}>Regresar</span>
             </span>
           </Link>
+          
         </div>
         <div data-aos='fade-in' className={styles.contenedor}>
           <div className='col'>
@@ -78,6 +83,9 @@ function PilitoView({ piloto }) {
                 <li>item2</li>
               </ul>
             </ul>
+            <div className={styles.boton}>
+              <Link href='/envivo'>En vivo</Link>
+            </div>
           </div>
           <div className='col'>
             <div className='resultados'>
