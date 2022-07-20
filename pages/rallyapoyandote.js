@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Nav from '/components/Nav';
 import Footer from '/components/Footer';
 import Image from 'next/image';
-import Mapa from '/img/pista.gif';
+import Mapa from '/public/pista.gif';
 import styles from '/styles/RA.module.scss';
 import Link from 'next/link';
 
