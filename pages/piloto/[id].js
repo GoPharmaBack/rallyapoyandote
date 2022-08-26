@@ -72,17 +72,7 @@ function PilitoView({ piloto }) {
               <li>
                 <span>País</span> {piloto.country}
               </li>
-              <span>Pacientes Halaven</span>
-              <ul>
-                <li>item1</li>
-                <li>item2</li>
               </ul>
-              <span>Pacientes Levinxi</span>
-              <ul>
-                <li>item1</li>
-                <li>item2</li>
-              </ul>
-            </ul>
             <div className={styles.boton}>
               <Link href='/envivo'>En vivo</Link>
             </div>
