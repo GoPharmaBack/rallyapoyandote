@@ -55,8 +55,8 @@ function PilitoView({ piloto }) {
                 <Image
                   src={piloto.image}
                   alt={piloto.name}
-                  width={167}
-                  height={189}
+                  width={196}
+                  height={243}
                 />
               </div>
               <div className={styles.bottom}>
