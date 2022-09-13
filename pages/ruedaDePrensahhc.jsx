@@ -6,7 +6,7 @@ import Formulario from '../components/Formulario';
 import Nav from '../components/Nav';
 import styles from '../styles/rueda.module.scss';
 import Hhc from '../img/hhc.png';
-import Corredor from '../img/corredor.png';
+import Corredor from '../img/RUEDA_DE_PRENSA.png';
 function ruedaDePrensa() {
   return (
     <>
@@ -80,8 +80,8 @@ function ruedaDePrensa() {
                     src={Corredor}
                     alt='hhc'
                     className={styles.hhcimg}
-                    width={110}
-                    height={120}
+                    width={199}
+                    height={158}
                   />
               
               </div>
