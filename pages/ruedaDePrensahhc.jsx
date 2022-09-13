@@ -72,7 +72,7 @@ function ruedaDePrensa() {
 
               <div className={styles.hhcManager}>
                 <div className={styles.titulo}>
-                  <h2>Xilace Díaz</h2>
+                  <h3>Xilace Díaz</h3>
                   <p>HHC Manager</p>
                 </div>
                
@@ -80,8 +80,8 @@ function ruedaDePrensa() {
                     src={Corredor}
                     alt='hhc'
                     className={styles.hhcimg}
-                    width={199}
-                    height={158}
+                    width={165}
+                    height={140}
                   />
               
               </div>
