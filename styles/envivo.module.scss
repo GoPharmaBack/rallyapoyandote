@@ -33,13 +33,13 @@
   flex-flow: column;
 }
 
-
 .carro {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   width: 100%;
+  margin-left: 4px !important;
 }
 
 .textGradient {
@@ -55,7 +55,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-.back{
+.back {
   position: absolute;
   top: 10vh;
   left: 10vw;
